@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTestMailSender", "WpfTestMailSender\WpfTestMailSender.csproj", "{51EE883C-E8F8-4A51-A2B6-93A7EB113840}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsTestMailSender", "WinFormsTestMailSender\WinFormsTestMailSender.csproj", "{0A3EF8AC-9DA5-4CD6-8DA1-1604FFCF6E5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51EE883C-E8F8-4A51-A2B6-93A7EB113840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51EE883C-E8F8-4A51-A2B6-93A7EB113840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51EE883C-E8F8-4A51-A2B6-93A7EB113840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51EE883C-E8F8-4A51-A2B6-93A7EB113840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A3EF8AC-9DA5-4CD6-8DA1-1604FFCF6E5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A3EF8AC-9DA5-4CD6-8DA1-1604FFCF6E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A3EF8AC-9DA5-4CD6-8DA1-1604FFCF6E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A3EF8AC-9DA5-4CD6-8DA1-1604FFCF6E5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BD6B699-EE12-4349-832C-4AC9FFA198DE}
+	EndGlobalSection
+EndGlobal
