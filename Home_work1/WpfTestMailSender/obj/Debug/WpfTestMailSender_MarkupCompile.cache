@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Kudryashov\Учеба\CS3\Home_work1\WpfTestMailSender\obj\Debug\
+D:\Учеба\CS3\Home_work1\WpfTestMailSender\obj\Debug\
 WpfTestMailSender
 none
 false
 DEBUG;TRACE
-D:\Kudryashov\Учеба\CS3\Home_work1\WpfTestMailSender\App.xaml
-3-1948632568
+D:\Учеба\CS3\Home_work1\WpfTestMailSender\App.xaml
+41643954587
 
-6807707446
+9882495410
 131254293103
-SendEndWindow.xaml;Theme.xaml;WpfMailSender.xaml;
+MessageBoxMailSender.xaml;SendEndWindow.xaml;Theme.xaml;WpfMailSender.xaml;
 
 False
 
