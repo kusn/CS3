@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btnSendEmail" Content="Отправить email" HorizontalAlignment="Left" Margin="662,380,0,0" VerticalAlignment="Top" Width="114" IsEnabled="False" Click="btnSendEmail_Click"/>
+        <Button x:Name="btnSendEmail" Content="Отправить email" HorizontalAlignment="Left" Margin="662,380,0,0" VerticalAlignment="Top" Width="114" IsEnabled="True" Click="btnSendEmail_Click"/>
         <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="29,201,0,0" VerticalAlignment="Top" Width="448"/>
 
     </Grid>

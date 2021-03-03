@@ -12,4 +12,7 @@ D:\Kudryashov\Учеба\CS3\Home_work1\WpfTestMailSender\obj\Debug\WpfTestMailS
 D:\Kudryashov\Учеба\CS3\Home_work1\WpfTestMailSender\obj\Debug\WpfTestMailSender.csproj.CoreCompileInputs.cache
 D:\Kudryashov\Учеба\CS3\Home_work1\WpfTestMailSender\obj\Debug\WpfTestMailSender.exe
 D:\Kudryashov\Учеба\CS3\Home_work1\WpfTestMailSender\obj\Debug\WpfTestMailSender.pdb
-D:\Kudryashov\Учеба\CS3\Home_work1\WpfTestMailSender\obj\Debug\WpfTestMailSender.csprojAssemblyReference.cache
+D:\Kudryashov\Учеба\CS3\Home_work1\WpfTestMailSender\obj\Debug\SendEndWindow.g.cs
+D:\Kudryashov\Учеба\CS3\Home_work1\WpfTestMailSender\obj\Debug\SendEndWindow.baml
+D:\Kudryashov\Учеба\CS3\Home_work1\WpfTestMailSender\obj\Debug\Theme.baml
+D:\Kudryashov\Учеба\CS3\Home_work1\WpfTestMailSender\obj\Debug\App.baml

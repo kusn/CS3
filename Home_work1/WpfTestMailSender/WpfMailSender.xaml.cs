@@ -58,7 +58,8 @@ namespace WpfTestMailSender
                     }
                 } //using (MailMessage mm = new MailMessage("sender@yandex.ru", mail))
             }
-            MessageBox.Show("Работа завершена.");
+            SendEndWindow sew = new SendEndWindow();
+            sew.ShowDialog();
         }
     }
 }
