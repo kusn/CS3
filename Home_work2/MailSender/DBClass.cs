@@ -6,7 +6,20 @@ using System.Threading.Tasks;
 
 namespace MailSender
 {
-    class DBClass
+    /// <summary>
+    /// Класс, который отвечает за работу с базой данных
+    /// </summary>
+    public class DBclass
     {
+        private EmailsDataContext emails = new EmailsDataContext();
+        public IQueryable<Emails> Emails
+        {
+            get
+            {
+                return from c in emails.Emails select c;
+            }
+        }
+
     }
+
 }
