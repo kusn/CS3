@@ -78,5 +78,15 @@ namespace MailSender
             EmailSendServiceClass emailSender = new EmailSendServiceClass(cbSenderSelect.Text, cbSenderSelect.SelectedValue.ToString());
             sc.SendEmails(dtSendDateTime, emailSender, (IQueryable<Emails>)dgEmails.ItemsSource);
         }
+
+        private void tscTabSwitcher_btnNextClick(object sender, RoutedEventArgs e)
+        {
+            tabControl.SelectedIndex = 1;
+        }
+
+        private void tscTabSwitcher_btnPreviousClick(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

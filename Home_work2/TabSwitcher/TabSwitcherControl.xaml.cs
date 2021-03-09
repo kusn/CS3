@@ -86,5 +86,17 @@ namespace TabSwitcher
         }
         #endregion
 
+        public event RoutedEventHandler btnNextClick;
+        public event RoutedEventHandler btnPreviousClick;
+
+        private void btnPrevious_Click(object sender, RoutedEventArgs e)
+        {
+            btnNextClick?.Invoke(sender, e);
+        }
+
+        private void btnNext_Click(object sender, RoutedEventArgs e)
+        {
+            btnPreviousClick?.Invoke(sender, e);
+        }
     }
 }

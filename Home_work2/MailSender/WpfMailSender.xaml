@@ -1,10 +1,12 @@
-﻿<Window x:Class="MailSender.WpfMailSender"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MailSender"
-        xmlns:vsc="clr-namespace:TabSwitcher;assembly=TabSwitcher"
+        
+        xmlns:TabSwitcher="clr-namespace:TabSwitcher;assembly=TabSwitcher" x:Class="MailSender.WpfMailSender"
+        
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Icon="Images/letter.png">
     <Grid>
@@ -20,9 +22,7 @@
                         <ToolBarTray Height="65" VerticalAlignment="Top">
                             <ToolBar x:Name="tbSender" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="Auto">
                                 <Label x:Name="lSender" Content="Выбрать отправителя" Height="25" VerticalAlignment="Top" Width="130"/>
-                                <ComboBox x:Name="cbSenderSelect" Height="25" Width="270" SelectedIndex="0" ToolTip="Выбрать email отправителя">
-                                    
-                                </ComboBox>
+                                <ComboBox x:Name="cbSenderSelect" Height="25" Width="270" SelectedIndex="0" ToolTip="Выбрать email отправителя"/>
                                 <Button x:Name="btnAddSender" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="25" Height="25" ToolTip="Добавить">
                                     <Image Source="Images/add.png" HorizontalAlignment="Right"/>
                                 </Button>
@@ -47,12 +47,13 @@
                                 </Button>
                             </ToolBar>
                             <!--<ToolBar x:Name="tbPlanner" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="230" Band="0" BandIndex="1" >
+                                
                                 <Label x:Name="lPlanner" Content="Перейти в планировщик" Height="25" Width="Auto"/>
                                 <Button x:Name="btnClock" Width="25" Height="25" ToolTip="Перейти в планировщик" Click="btnClock_Click">
                                     <Image Source="Images\clock.png"/>
                                 </Button>
                             </ToolBar>-->
-                            <vsc:TabSwitcherControl/>
+
                             <ToolBar x:Name="tbAddressee" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="230" Band="1" BandIndex="1" >
                                 <Label x:Name="lAddressee" Content="Список адресатов" Height="25" Width="Auto"/>
                                 <Button x:Name="btnAddAddressee" Width="25" Height="25" ToolTip="Добавить">
@@ -66,9 +67,10 @@
                                 </Button>
                             </ToolBar>
                         </ToolBarTray>
-                        <DataGrid x:Name="dgEmails" Margin="0,70,0,0">
+                        <DataGrid x:Name="dgEmails" Margin="0,70,0,0"/>
 
-                        </DataGrid>
+                        <TabSwitcher:TabSwitcherControl Name="tscTabSwitcher" HorizontalAlignment="Left" Height="25" Margin="509,0,0,0" VerticalAlignment="Top" Width="217" btnNextClick="tscTabSwitcher_btnNextClick" btnPreviousClick="tscTabSwitcher_btnPreviousClick"/>
+
                     </Grid>
                 </TabItem>
                 <TabItem x:Name="tabPlanner" Header="Планировщик">
@@ -84,16 +86,12 @@
                             <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
                         <TextBox x:Name="tbTimePicker" Grid.Row="1" Grid.Column="0"/>
-                        <Calendar x:Name="cldSchedulDateTimes" HorizontalAlignment="Left" VerticalAlignment="Top" SelectionMode="MultipleRange" Grid.Row="0" Grid.Column="0" Height="170" Width="180">
-
-                        </Calendar>
+                        <Calendar x:Name="cldSchedulDateTimes" HorizontalAlignment="Left" VerticalAlignment="Top" SelectionMode="MultipleRange" Grid.Row="0" Grid.Column="0" Height="170" Width="180"/>
                         <Button x:Name="btnSend" Grid.Row="2" Click="btnSend_Click">
-                            <Button.Content>
-                                <StackPanel Orientation="Horizontal">
-                                    <Image Source="Images/clock.png" Width="16" Height="16" />
-                                    <TextBlock Margin="3,0,0,0" Text="Отправить запланированно" VerticalAlignment="Center" />
-                                </StackPanel>
-                            </Button.Content>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="Images/clock.png" Width="16" Height="16" />
+                                <TextBlock Margin="3,0,0,0" Text="Отправить запланированно" VerticalAlignment="Center" />
+                            </StackPanel>
                         </Button>
                         <Button x:Name="btnSendAtOnce" Content="Отправить сразу" Grid.Row="3" Click="btnSendAtOnce_Click"/>
                     </Grid>

@@ -37,7 +37,7 @@
   <ItemGroup>
     <Reference Include="CodePasswordDLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22c67f2f4a30daff, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\CodePasswordDLL\v4.0_1.0.0.0__22c67f2f4a30daff\CodePasswordDLL.dll</HintPath>
+      <HintPath>C:\Windows\assembly\temp\9F4EM58V8O\CodePasswordDLL.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
