@@ -10,3 +10,17 @@ D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.csproj
 D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.csproj.CoreCompileInputs.cache
 D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.dll
 D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.pdb
+D:\Учеба\CS3\Home_work2\TabSwitcher\bin\Debug\Images\Move Next (Arrow) Green64.png
+D:\Учеба\CS3\Home_work2\TabSwitcher\bin\Debug\Images\Move Previous (Arrow) Green64.png
+D:\Учеба\CS3\Home_work2\TabSwitcher\bin\Debug\TabSwitcher.dll
+D:\Учеба\CS3\Home_work2\TabSwitcher\bin\Debug\TabSwitcher.pdb
+D:\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcherControl.g.cs
+D:\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher_MarkupCompile.cache
+D:\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher_MarkupCompile.lref
+D:\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcherControl.baml
+D:\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.g.resources
+D:\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.Properties.Resources.resources
+D:\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.csproj.GenerateResource.cache
+D:\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.csproj.CoreCompileInputs.cache
+D:\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.dll
+D:\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.pdb

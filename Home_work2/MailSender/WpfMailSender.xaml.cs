@@ -27,6 +27,10 @@ namespace MailSender
             cbSenderSelect.DisplayMemberPath = "Key";
             cbSenderSelect.SelectedValuePath = "Value";
 
+            cbSmtpSelect.ItemsSource = SmtpServersClass.Servers;
+            cbSmtpSelect.DisplayMemberPath = "Key";
+            cbSmtpSelect.SelectedValuePath = "Value";
+
             DBclass db = new DBclass();
             dgEmails.ItemsSource = db.Emails;
         }
@@ -87,6 +91,6 @@ namespace MailSender
         private void tscTabSwitcher_btnPreviousClick(object sender, RoutedEventArgs e)
         {
 
-        }
+        }        
     }
 }

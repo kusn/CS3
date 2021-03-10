@@ -46,3 +46,23 @@ D:\Kudryashov\Учеба\CS3\Home_work2\MailSender\obj\Debug\MailSender.csproj.C
 D:\Kudryashov\Учеба\CS3\Home_work2\MailSender\obj\Debug\MailSender.csproj.CopyComplete
 D:\Kudryashov\Учеба\CS3\Home_work2\MailSender\obj\Debug\MailSender.exe
 D:\Kudryashov\Учеба\CS3\Home_work2\MailSender\obj\Debug\MailSender.pdb
+D:\Учеба\CS3\Home_work2\MailSender\bin\Debug\Images\Move Next (Arrow) Green64.png
+D:\Учеба\CS3\Home_work2\MailSender\bin\Debug\Images\Move Previous (Arrow) Green64.png
+D:\Учеба\CS3\Home_work2\MailSender\bin\Debug\MailSender.exe.config
+D:\Учеба\CS3\Home_work2\MailSender\bin\Debug\MailSender.exe
+D:\Учеба\CS3\Home_work2\MailSender\bin\Debug\MailSender.pdb
+D:\Учеба\CS3\Home_work2\MailSender\bin\Debug\TabSwitcher.dll
+D:\Учеба\CS3\Home_work2\MailSender\bin\Debug\TabSwitcher.pdb
+D:\Учеба\CS3\Home_work2\MailSender\obj\Debug\MailSender.csprojAssemblyReference.cache
+D:\Учеба\CS3\Home_work2\MailSender\obj\Debug\WpfMailSender.g.cs
+D:\Учеба\CS3\Home_work2\MailSender\obj\Debug\App.g.cs
+D:\Учеба\CS3\Home_work2\MailSender\obj\Debug\MailSender_MarkupCompile.cache
+D:\Учеба\CS3\Home_work2\MailSender\obj\Debug\MailSender_MarkupCompile.lref
+D:\Учеба\CS3\Home_work2\MailSender\obj\Debug\WpfMailSender.baml
+D:\Учеба\CS3\Home_work2\MailSender\obj\Debug\MailSender.g.resources
+D:\Учеба\CS3\Home_work2\MailSender\obj\Debug\MailSender.Properties.Resources.resources
+D:\Учеба\CS3\Home_work2\MailSender\obj\Debug\MailSender.csproj.GenerateResource.cache
+D:\Учеба\CS3\Home_work2\MailSender\obj\Debug\MailSender.csproj.CoreCompileInputs.cache
+D:\Учеба\CS3\Home_work2\MailSender\obj\Debug\MailSender.csproj.CopyComplete
+D:\Учеба\CS3\Home_work2\MailSender\obj\Debug\MailSender.exe
+D:\Учеба\CS3\Home_work2\MailSender\obj\Debug\MailSender.pdb
