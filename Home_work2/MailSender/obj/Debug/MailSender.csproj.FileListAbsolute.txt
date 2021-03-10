@@ -66,3 +66,5 @@ D:\Учеба\CS3\Home_work2\MailSender\obj\Debug\MailSender.csproj.CoreCompileI
 D:\Учеба\CS3\Home_work2\MailSender\obj\Debug\MailSender.csproj.CopyComplete
 D:\Учеба\CS3\Home_work2\MailSender\obj\Debug\MailSender.exe
 D:\Учеба\CS3\Home_work2\MailSender\obj\Debug\MailSender.pdb
+D:\Учеба\CS3\Home_work2\MailSender\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Учеба\CS3\Home_work2\MailSender\bin\Debug\Xceed.Wpf.Toolkit.pdb

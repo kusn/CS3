@@ -46,5 +46,22 @@ namespace MailerMVVM
             if (tabControl.SelectedIndex == tabControl.Items.Count - 1) tabControl.SelectedIndex = 0;
             else tabControl.SelectedIndex++;
         }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void miAbout_Click(object sender, RoutedEventArgs e)
+        {
+            View.AboutWindow aboutWindow = new View.AboutWindow();
+            aboutWindow.Show();
+        }
+
+        private void miTask_Click(object sender, RoutedEventArgs e)
+        {
+            View.TaskWindow taskWindow = new View.TaskWindow();
+            taskWindow.Show();
+        }
     }
 }

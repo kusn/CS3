@@ -1,4 +1,4 @@
-﻿<Window 
+﻿<Window xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"  
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -80,7 +80,8 @@
                             <ColumnDefinition Width="180"/>
                             <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
-                        <TextBox x:Name="tbTimePicker" Grid.Row="1" Grid.Column="0"/>
+                        <xctk:TimePicker x:Name="timePiker" Grid.Row="1" Grid.Column="0"/>
+                        <!--<TextBox x:Name="tbTimePicker" Grid.Row="1" Grid.Column="0"/>-->
                         <Calendar x:Name="cldSchedulDateTimes" HorizontalAlignment="Left" VerticalAlignment="Top" SelectionMode="MultipleRange" Grid.Row="0" Grid.Column="0" Height="170" Width="180"/>
                         <Button x:Name="btnSend" Grid.Row="2" Click="btnSend_Click">
                             <StackPanel Orientation="Horizontal">
@@ -88,14 +89,19 @@
                                 <TextBlock Margin="3,0,0,0" Text="Отправить запланированно" VerticalAlignment="Center" />
                             </StackPanel>
                         </Button>
-                        <Button x:Name="btnSendAtOnce" Content="Отправить сразу" Grid.Row="3" Click="btnSendAtOnce_Click"/>
+                        <Button x:Name="btnSendAtOnce" Grid.Row="3" Click="btnSendAtOnce_Click">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="Images/Letter2.png" Width="16" Height="16" />
+                                <TextBlock Margin="3,0,0,0" Text="Отправить сразу" VerticalAlignment="Center" />
+                            </StackPanel>
+                        </Button>
                     </Grid>
                 </TabItem>
-                <TabItem Header="Редактор писем" Margin="0,0,0,1">
+                <TabItem x:Name="tabEditText" Header="Редактор писем" Margin="0,0,0,1">
                     <RichTextBox x:Name="richTextBox">
                         <FlowDocument>
                             <Paragraph>
-                                <Run Text="RichTextBox"/>
+                                <Run Text=""/>
                             </Paragraph>
                         </FlowDocument>
                     </RichTextBox>

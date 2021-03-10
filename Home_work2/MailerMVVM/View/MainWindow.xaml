@@ -19,7 +19,8 @@
                 <MenuItem Header="Выход" Click="MenuItem_Click"/>
             </MenuItem>
             <MenuItem Header="Помощь">
-                <MenuItem Header="О себе"/>
+                <MenuItem x:Name="miTask" Header="Задание" Click="miTask_Click"/>
+                <MenuItem x:Name="miAbout" Header="О себе" Click="miAbout_Click"/>
             </MenuItem>
         </Menu>
         <OurWpfControlsLibrary:TabSwitcher Grid.Row="1" btnPrevClick="TabSwitcher_btnPrevClick" btnNextClick="TabSwitcher_btnNextClick"/>
@@ -99,7 +100,7 @@
                         <Image Source="/Images/clock.png" Width="20" HorizontalAlignment="Left"/>
                         <TextBlock Margin="3"><Run Text="Планировщик"/></TextBlock>
                     </StackPanel>
-                </TabItem.Header>                
+                </TabItem.Header>
             </TabItem>
             <TabItem x:Name="tabInstant" IsSelected="True">
                 <TabItem.Header>
@@ -122,6 +123,6 @@
                     <Button   x:Name="btnAddNewMail" Width="auto" FontWeight="Medium" Content="Добавить в планировщик" Command="{Binding AddNewMail}"/>
                 </StackPanel>
             </TabItem>
-        </TabControl>
+        </TabControl>        
     </Grid>
 </Window>

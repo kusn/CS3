@@ -24,3 +24,4 @@ D:\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.csproj.GenerateRe
 D:\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.csproj.CoreCompileInputs.cache
 D:\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.dll
 D:\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.pdb
+D:\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.csprojAssemblyReference.cache

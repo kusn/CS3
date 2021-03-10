@@ -19,19 +19,24 @@ namespace MailSender
         private string strBody;                    // текст письма для отправки
         private string strSubject;                 // тема письма для отправки
         #endregion
+
+        public string Smtp { get; set; }
+        public int Port { get; set; }
+
         public EmailSendServiceClass(string sLogin, string sPassword)
         {
             strLogin = sLogin;
             strPassword = sPassword;
         }
-        private void SendMail(string mail, string name) // Отправка email конкретному адресату
+        public void SendMail(string mail, string name) // Отправка email конкретному адресату
         {
             using (MailMessage mm = new MailMessage(strLogin, mail))
             {
                 mm.Subject = strSubject;
                 mm.Body = "Hello world!";
                 mm.IsBodyHtml = false;
-                SmtpClient sc = new SmtpClient(strSmtp, iSmtpPort);
+                //SmtpClient sc = new SmtpClient(strSmtp, iSmtpPort);
+                SmtpClient sc = new SmtpClient(Smtp, Port);
                 sc.EnableSsl = true;
                 sc.DeliveryMethod = SmtpDeliveryMethod.Network;
                 sc.UseDefaultCredentials = false;

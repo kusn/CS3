@@ -48,12 +48,31 @@ namespace MailSender
         private void btnSendAtOnce_Click(object sender, RoutedEventArgs e)
         {
             string strLogin = cbSenderSelect.Text;
-            string strPassword = cbSenderSelect.SelectedValue.ToString();
-            if (string.IsNullOrEmpty(strLogin))
+            string strPassword;
+            TextRange textRange = new TextRange(richTextBox.Document.ContentStart, richTextBox.Document.ContentEnd);
+
+            if (textRange.Text == "\r\n") //Проверка заполнености письма
+            {
+                MessageBox.Show("Письмо не заполнено");
+                tabControl.SelectedItem = tabEditText;
+                return;
+            }
+
+            try
+            {
+                strPassword = cbSenderSelect.SelectedValue.ToString();
+            }
+            catch
             {
                 MessageBox.Show("Выберите отправителя");
                 return;
             }
+            
+            /*if (string.IsNullOrEmpty(strLogin))
+            {
+                MessageBox.Show("Выберите отправителя");
+                return;
+            }*/
             if (string.IsNullOrEmpty(strPassword))
             {
                 MessageBox.Show("Укажите пароль отправителя");
@@ -61,13 +80,24 @@ namespace MailSender
             }
 
             EmailSendServiceClass emailSender = new EmailSendServiceClass(strLogin, strPassword);
+            emailSender.Smtp = cbSmtpSelect.SelectedItem.ToString();
+            emailSender.Port = SmtpServersClass.Servers[cbSmtpSelect.SelectedItem.ToString()];
             emailSender.SendMails((IQueryable<Emails>)dgEmails.ItemsSource);
         }
 
         private void btnSend_Click(object sender, RoutedEventArgs e)
         {
             SchedulerClass sc = new SchedulerClass();
-            TimeSpan tsSendTime = sc.GetSendTime(tbTimePicker.Text);
+            TimeSpan tsSendTime = sc.GetSendTime(timePiker.Text);   //Заменил TextBlock на TimePiker
+            TextRange textRange = new TextRange(richTextBox.Document.ContentStart, richTextBox.Document.ContentEnd);
+
+            if (textRange.Text == "\r\n")   //Проверка заполнености письма
+            {
+                MessageBox.Show("Письмо не заполнено");
+                tabControl.SelectedItem = tabEditText;
+                return;
+            }
+
             if (tsSendTime == new TimeSpan())
             {
                 MessageBox.Show("Некорректный формат даты");
