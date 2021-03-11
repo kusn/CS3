@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MailerMVVM.View"
         mc:Ignorable="d"
-        Title="AboutWindow" Height="450" Width="800">
+        Title="AboutWindow" Height="450" Width="500">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="30*"/>
             <ColumnDefinition Width="100*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="30*"/>
+            <RowDefinition Height="35*"/>
             <RowDefinition Height="50*"/>
             <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
@@ -22,5 +22,6 @@
             </TextBlock.Text>
         </TextBlock>
         <Button x:Name="btOkAbout" Content="OK" Grid.Column="0" Grid.Row="2" Click="btOkAbout_Click" Margin="2"/>
+        <Image Source="/Images/photo.png" Grid.Column="0" Grid.Row="0"/>
     </Grid>
 </Window>

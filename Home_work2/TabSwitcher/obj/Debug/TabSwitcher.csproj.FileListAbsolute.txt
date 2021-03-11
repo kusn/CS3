@@ -1,15 +1,3 @@
-D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\bin\Debug\TabSwitcher.dll
-D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\bin\Debug\TabSwitcher.pdb
-D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcherControl.g.cs
-D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher_MarkupCompile.cache
-D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher_MarkupCompile.lref
-D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcherControl.baml
-D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.g.resources
-D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.Properties.Resources.resources
-D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.csproj.GenerateResource.cache
-D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.csproj.CoreCompileInputs.cache
-D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.dll
-D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.pdb
 D:\Учеба\CS3\Home_work2\TabSwitcher\bin\Debug\Images\Move Next (Arrow) Green64.png
 D:\Учеба\CS3\Home_work2\TabSwitcher\bin\Debug\Images\Move Previous (Arrow) Green64.png
 D:\Учеба\CS3\Home_work2\TabSwitcher\bin\Debug\TabSwitcher.dll
@@ -25,3 +13,17 @@ D:\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.csproj.CoreCompil
 D:\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.dll
 D:\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.pdb
 D:\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.csprojAssemblyReference.cache
+D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\bin\Debug\Images\Move Next (Arrow) Green64.png
+D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\bin\Debug\Images\Move Previous (Arrow) Green64.png
+D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\bin\Debug\TabSwitcher.dll
+D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\bin\Debug\TabSwitcher.pdb
+D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcherControl.g.cs
+D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher_MarkupCompile.cache
+D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher_MarkupCompile.lref
+D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcherControl.baml
+D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.g.resources
+D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.Properties.Resources.resources
+D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.csproj.GenerateResource.cache
+D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.csproj.CoreCompileInputs.cache
+D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.dll
+D:\Kudryashov\Учеба\CS3\Home_work2\TabSwitcher\obj\Debug\TabSwitcher.pdb

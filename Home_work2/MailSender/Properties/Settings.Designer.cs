@@ -26,11 +26,22 @@ namespace MailSender.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=MailsAndSenders;Integrated Sec" +
-            "urity=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\MailsAndSende" +
+            "rs.mdf;Integrated Security=True;Connect Timeout=30")]
         public string MailsAndSendersConnectionString {
             get {
                 return ((string)(this["MailsAndSendersConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=MailsAndSenders;Integrated Sec" +
+            "urity=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False")]
+        public string MailsAndSendersConnectionString1 {
+            get {
+                return ((string)(this["MailsAndSendersConnectionString1"]));
             }
         }
     }

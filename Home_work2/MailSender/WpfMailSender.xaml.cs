@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Net;
+using System.Net.Mail;
 
 namespace MailSender
 {
@@ -121,6 +123,18 @@ namespace MailSender
         private void tscTabSwitcher_btnPreviousClick(object sender, RoutedEventArgs e)
         {
 
-        }        
+        }
+
+        private void mniTask_Click(object sender, RoutedEventArgs e)
+        {
+            TaskWindow taskWindow = new TaskWindow();
+            taskWindow.Show();
+        }
+
+        private void mniAbout_Click(object sender, RoutedEventArgs e)
+        {
+            AboutWindow aboutWindow = new AboutWindow();
+            aboutWindow.Show();
+        }
     }
 }

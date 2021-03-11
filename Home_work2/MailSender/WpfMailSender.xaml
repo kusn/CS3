@@ -13,6 +13,10 @@
                 <MenuItem x:Name="mniFile" Header="Файл">
                     <MenuItem x:Name="mniClose" Header="Закрыть" Click="mniClose_Click"/>
                 </MenuItem>
+                <MenuItem x:Name="mniHelp" Header="Помощь">
+                    <MenuItem x:Name="mniTask" Header="Задание" Click="mniTask_Click"/>
+                    <MenuItem x:Name="mniAbout" Header="О себе" Click="mniAbout_Click"/>
+                </MenuItem>
             </Menu>
             <TabControl x:Name="tabControl">
                 <TabItem x:Name="tabSender" Header="Формирование группы рассылки">
