@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailSender", "MailSender\MailSender.csproj", "{1C10A6CB-8346-4A09-BBB5-84FFA854E764}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePasswordDLL", "CodePasswordDLL\CodePasswordDLL.csproj", "{5FA2CDEF-BC95-4F75-AF90-037CE47DE95C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabSwitcher", "TabSwitcher\TabSwitcher.csproj", "{70406986-6304-4F20-8266-7438FE877242}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OurWpfControlsLibrary", "OurWpfControlsLibrary\OurWpfControlsLibrary.csproj", "{87602FFB-12E1-429E-85C2-6294DA8C084A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailerMVVM", "MailerMVVM\MailerMVVM.csproj", "{768E5AE8-1FF5-4DF7-8B26-825ABBAA8295}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xceed.Wpf.Toolkit", "Xceed.Wpf.Toolkit\Xceed.Wpf.Toolkit.csproj", "{72E591D6-8F83-4D8C-8F67-9C325E623234}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C10A6CB-8346-4A09-BBB5-84FFA854E764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C10A6CB-8346-4A09-BBB5-84FFA854E764}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C10A6CB-8346-4A09-BBB5-84FFA854E764}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C10A6CB-8346-4A09-BBB5-84FFA854E764}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FA2CDEF-BC95-4F75-AF90-037CE47DE95C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FA2CDEF-BC95-4F75-AF90-037CE47DE95C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FA2CDEF-BC95-4F75-AF90-037CE47DE95C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FA2CDEF-BC95-4F75-AF90-037CE47DE95C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70406986-6304-4F20-8266-7438FE877242}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70406986-6304-4F20-8266-7438FE877242}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70406986-6304-4F20-8266-7438FE877242}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70406986-6304-4F20-8266-7438FE877242}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87602FFB-12E1-429E-85C2-6294DA8C084A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87602FFB-12E1-429E-85C2-6294DA8C084A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87602FFB-12E1-429E-85C2-6294DA8C084A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87602FFB-12E1-429E-85C2-6294DA8C084A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{768E5AE8-1FF5-4DF7-8B26-825ABBAA8295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{768E5AE8-1FF5-4DF7-8B26-825ABBAA8295}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{768E5AE8-1FF5-4DF7-8B26-825ABBAA8295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{768E5AE8-1FF5-4DF7-8B26-825ABBAA8295}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E591D6-8F83-4D8C-8F67-9C325E623234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E591D6-8F83-4D8C-8F67-9C325E623234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E591D6-8F83-4D8C-8F67-9C325E623234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E591D6-8F83-4D8C-8F67-9C325E623234}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1745DE98-8E17-45ED-A2C8-01647EB9AA1F}
+	EndGlobalSection
+EndGlobal

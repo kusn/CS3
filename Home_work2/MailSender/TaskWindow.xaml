@@ -1,0 +1,49 @@
+﻿<Window x:Class="MailSender.TaskWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MailSender"
+        mc:Ignorable="d"
+        Title="TaskWindow" Height="425" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>        
+        <RichTextBox Grid.Row="0" Margin="2,2,2,2" FontSize="14" VerticalScrollBarVisibility="Auto">
+            <RichTextBox.Document>
+                <FlowDocument>
+                    <Paragraph>
+                        1. Мы создали ToolBarTray и поместили на нём один из элементов ToolBar, на который, в свою очередь, поместили лейбл с названием, комбобокс с выбором отправителя и три кнопки. Задание:
+                    </Paragraph>
+                    <Paragraph>
+                        a. По аналогии с комбобоксом по выбору отправителя надо создать комбобокс с выбором smtp-сервера. На лейбле написать «Выбрать smtp-server».
+                    </Paragraph>
+                    <Paragraph>
+                        b. Добавить ToolBar «Перейти в планировщик» без комбобокса с одной кнопкой clock.png.
+                    </Paragraph>
+                    <Paragraph>
+                    c. Добавить ToolBar «Список адресатов» без комбобокса с тремя кнопками.
+                    </Paragraph>
+                    <Paragraph>
+                    По нажатию на кнопку перейти в планировщик, сделайте, чтобы происходил переход на вкладку «Планировщик». К комбобоксу «Выбрать smtp-server» привяжите Dictionary по аналогии с комбобоксом «Выбрать отправителя». Создайте Dictionary в том же классе, где ключом будет smtp-сервер, а значением (с типом int) порт smtp сервера. Сделайте так, чтобы значения сервера и порта передавались в экземпляр класса, который отвечает за отправку почты.
+                    </Paragraph>
+                    <Paragraph>
+                    2. При отправке писем сделать проверку, есть ли текст в элементе RichTextBox во вкладке «Редактор писем». Если он пуст, то на экран выводить окно «Письмо не заполнено» и открывать вкладку «Редактор писем».
+                    </Paragraph>
+                    <Paragraph>
+                    3. Скачать и установить WPF Toolkit http://wpftoolkit.codeplex.com/releases/view/617027. Добавить вкладку на ToolBox “Wpf Toolkit controls”. Затем кликнуть правой кнопкой мыши по “Choose item”. В диалоге, который появился, выбрать кнопку “Browse”и выбрать dll с Toolkit.
+                    </Paragraph>
+                    <Paragraph>                    
+                    4. Во вкладке «Планировщик», заменить TextBox для ввода времени на элемент TimePicker.
+                    </Paragraph>
+                    <Paragraph>
+                    5. Добавить картинку Letter2.jpg к кнопке «Отправить сразу» во вкладке «Планировщик».
+                    </Paragraph> 
+                </FlowDocument>
+            </RichTextBox.Document>
+        </RichTextBox>
+        <Button x:Name="btOk" Content="OK" Grid.Row="1" Click="btOk_Click"/>
+    </Grid>
+</Window>
