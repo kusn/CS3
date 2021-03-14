@@ -1,4 +1,10 @@
-﻿using System;
+﻿// Кудряшов Сергей
+
+// 1.Доработать приложение MVVMAccess.
+// а.Добавить свойство Access информирующее, получил ли пользователь доступ.
+// б.Добавить команду Clear - которое очищает поля логина и пароля.
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

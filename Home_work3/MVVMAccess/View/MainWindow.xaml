@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:MVVMAccess"
         mc:Ignorable="d"
         xmlns:viewmodel="clr-namespace:MVVMAccess.ViewModel"
-        Title="MainWindow" Height="180" Width="400">
+        Title="MainWindow" Height="200" Width="400">
     <Window.DataContext>
         <viewmodel:ViewModel></viewmodel:ViewModel>
     </Window.DataContext>
@@ -17,6 +17,7 @@
         <TextBox Name="tbPassword" Text="{Binding Path=Account.Password,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"/>
         <Button x:Name="btnAccess" Command="{Binding ClickAccess}">Ввести</Button>
         <Button x:Name="btnClearLogin" Command="{Binding ClickClearLogin}" CommandParameter="{Binding Path=Account.Login}" >Очистить логин</Button>
+        <Button x:Name="btnClearPassword" Command="{Binding ClickClearPassword}" CommandParameter="{Binding Path=Account.Password}" >Очистить пароль</Button>
         <TextBlock x:Name="tbAccess" Text="{Binding Path=Access}" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
         <TextBlock x:Name="tbAttemptCount" Text="{Binding Path=AttemptCount,StringFormat=Попытка {0}}" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
     </StackPanel>

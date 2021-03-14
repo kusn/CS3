@@ -28,7 +28,20 @@ namespace MVVMAccess.Model
                 }
             }
         }
-        public string Password { get => password; set => password = value; }
+        public string Password
+        {
+            get => password;
+            set
+            {
+                if (value != password)
+                {
+                    password = value;
+                    //Если у элемента OneWayToSource - PropertyChanged.Invoke не обновляет данные    
+                    Console.WriteLine("1");
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Password"));
+                }
+            }
+        }
 
         public Account(string login, string password)
         {
