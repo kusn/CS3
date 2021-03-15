@@ -13,8 +13,8 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Margin="2,2,2,2" FontSize="16" TextWrapping="Wrap">
             <TextBlock.Text>
-                1. Доделать TabSwitcher;
-                2. Добавить окно "О себе".
+                2. Начать переделывать свое приложение с использованием шаблона MVVM.
+В идеале, вся логика должна быть вынесена из класса с пользовательским интерфейсом в модель.
             </TextBlock.Text>
         </TextBlock>
         <Button x:Name="btOk" Content="OK" Grid.Row="1" Click="btOk_Click"/>

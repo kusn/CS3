@@ -58,3 +58,15 @@ D:\Projects\CS3\Home_work3\OurWpfControlsLibrary\obj\Debug\OurWpfControlsLibrary
 D:\Projects\CS3\Home_work3\OurWpfControlsLibrary\obj\Debug\OurWpfControlsLibrary.csproj.CoreCompileInputs.cache
 D:\Projects\CS3\Home_work3\OurWpfControlsLibrary\obj\Debug\OurWpfControlsLibrary.dll
 D:\Projects\CS3\Home_work3\OurWpfControlsLibrary\obj\Debug\OurWpfControlsLibrary.pdb
+D:\Учеба\CS3\Home_work3\OurWpfControlsLibrary\bin\Debug\OurWpfControlsLibrary.dll
+D:\Учеба\CS3\Home_work3\OurWpfControlsLibrary\bin\Debug\OurWpfControlsLibrary.pdb
+D:\Учеба\CS3\Home_work3\OurWpfControlsLibrary\obj\Debug\TabSwitcher.g.cs
+D:\Учеба\CS3\Home_work3\OurWpfControlsLibrary\obj\Debug\OurWpfControlsLibrary_MarkupCompile.cache
+D:\Учеба\CS3\Home_work3\OurWpfControlsLibrary\obj\Debug\OurWpfControlsLibrary_MarkupCompile.lref
+D:\Учеба\CS3\Home_work3\OurWpfControlsLibrary\obj\Debug\TabSwitcher.baml
+D:\Учеба\CS3\Home_work3\OurWpfControlsLibrary\obj\Debug\OurWpfControlsLibrary.g.resources
+D:\Учеба\CS3\Home_work3\OurWpfControlsLibrary\obj\Debug\OurWpfControlsLibrary.Properties.Resources.resources
+D:\Учеба\CS3\Home_work3\OurWpfControlsLibrary\obj\Debug\OurWpfControlsLibrary.csproj.GenerateResource.cache
+D:\Учеба\CS3\Home_work3\OurWpfControlsLibrary\obj\Debug\OurWpfControlsLibrary.csproj.CoreCompileInputs.cache
+D:\Учеба\CS3\Home_work3\OurWpfControlsLibrary\obj\Debug\OurWpfControlsLibrary.dll
+D:\Учеба\CS3\Home_work3\OurWpfControlsLibrary\obj\Debug\OurWpfControlsLibrary.pdb
