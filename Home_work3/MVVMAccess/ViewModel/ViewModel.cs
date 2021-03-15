@@ -29,7 +29,7 @@ namespace MVVMAccess.ViewModel
         {
             get
             {
-                return Model.AccessToApp.Checks(Account);
+                return Model.Accounts.Find(Account);
             }            
         }
 
@@ -43,7 +43,9 @@ namespace MVVMAccess.ViewModel
             {
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Access"));
                 MessageBox.Show("Логин и пароль введены верно!");
-            }            
+            }
+            else
+                MessageBox.Show("Логин или пароль введены не верно!");
         }
 
         private bool CanExecute(object obj)
