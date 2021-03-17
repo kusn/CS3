@@ -32,7 +32,16 @@
             </TextBox.Text>
         </TextBox>
         <TextBlock>Пароль</TextBlock>
-        <TextBox Name="tbPassword" Text="{Binding Path=Account.Password,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"/>
+        <TextBox Name="tbPassword">
+            <TextBox.Text>
+                <Binding Path="Account.Password" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                    <Binding.ValidationRules>
+                        <DataErrorValidationRule/>
+                        <!--<ExceptionValidationRule/>-->
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
         <TextBlock>Валидация</TextBlock>
         <TextBox Name ="tbValidation" Text="{Binding Path=Account.Number, UpdateSourceTrigger=PropertyChanged,
             Mode=TwoWay}" Validation.ErrorTemplate="{StaticResource TextBoxErrorTemplate}">

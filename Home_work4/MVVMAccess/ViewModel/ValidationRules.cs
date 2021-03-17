@@ -7,9 +7,9 @@ using System.Globalization;
 using System.Text.RegularExpressions;
 using System.Windows.Controls;
 
-namespace MailerMVVM.ViewModel
+namespace MVVMAccess.ViewModel
 {
-    class PasswordValidationRule : ValidationRule
+    public class PasswordValidationRule : ValidationRule
     {
         Regex regex = new Regex(@"(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n})(?=.*[A-Z])(?=.*[a-z]).*$");
 
@@ -21,7 +21,7 @@ namespace MailerMVVM.ViewModel
         }
     }
 
-    class LoginValidationRule : ValidationRule
+    public class LoginValidationRule : ValidationRule
     {
         Regex regex = new Regex(@"^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$");
 
