@@ -136,3 +136,14 @@ D:\Учеба\CS3\Home_work3\MailerMVVM\obj\Debug\MailerMVVM.Properties.Resource
 D:\Учеба\CS3\Home_work3\MailerMVVM\obj\Debug\MailerMVVM.csproj.GenerateResource.cache
 D:\Учеба\CS3\Home_work3\MailerMVVM\obj\Debug\MailerMVVM.csproj.CoreCompileInputs.cache
 D:\Учеба\CS3\Home_work3\MailerMVVM\obj\Debug\MailerMVVM.csproj.CopyComplete
+D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\MailerMVVM.csprojAssemblyReference.cache
+D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\Theme\Theme.baml
+D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\Theme\Theme2.baml
+D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\View\TaskWindow.g.cs
+D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\View\AboutWindow.g.cs
+D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\App.g.cs
+D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\MailerMVVM_MarkupCompile.cache
+D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\MailerMVVM_MarkupCompile.lref
+D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\MailerMVVM.exe
+D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\MailerMVVM.pdb

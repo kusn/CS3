@@ -16,18 +16,39 @@
                 <Border BorderBrush="OrangeRed" BorderThickness="2">
                     <AdornedElementPlaceholder/>
                 </Border>
-                <!--<ToolTip Foreground="Red" FontWeight="Bold">!!!</ToolTip>-->
+                <!--<TextBlock Name="TbError" Foreground="Red" FontWeight="Bold">!!!</TextBlock>-->
             </StackPanel>
         </ControlTemplate>
     </Window.Resources>
     <StackPanel>
         <TextBlock>Логин</TextBlock>
-        <TextBox Name="tbLogin" Text="{Binding Path=Account.Login, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"/>
+        <TextBox Name="tbLogin">
+            <TextBox.Text>
+                <Binding Path="Account.Login" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                    <Binding.ValidationRules>
+                        <viewmodel:LoginValidationRule/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
         <TextBlock>Пароль</TextBlock>
         <TextBox Name="tbPassword" Text="{Binding Path=Account.Password,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"/>
         <TextBlock>Валидация</TextBlock>
         <TextBox Name ="tbValidation" Text="{Binding Path=Account.Number, UpdateSourceTrigger=PropertyChanged,
-            Mode=TwoWay}" Validation.ErrorTemplate="{StaticResource TextBoxErrorTemplate}"></TextBox>
+            Mode=TwoWay}" Validation.ErrorTemplate="{StaticResource TextBoxErrorTemplate}">
+            <TextBox.Style>
+                <Style TargetType="TextBox">                    
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Path=(Validation.HasError), ElementName=tbValidation}" Value="True">                            
+                            <Setter Property="ToolTip" Value="Неверный формат. Введите число!!!"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=(Validation.HasError), ElementName=tbValidation}" Value="False">
+                            <Setter Property="ToolTip" Value="OK"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
         <Button x:Name="btnAccess" Command="{Binding ClickAccess}">Ввести</Button>
         <Button x:Name="btnClearLogin" Command="{Binding ClickClearLogin}" CommandParameter="{Binding Path=Account.Login}" >Очистить логин</Button>
         <Button x:Name="btnClearPassword" Command="{Binding ClickClearPassword}" CommandParameter="{Binding Path=Account.Password}" >Очистить пароль</Button>
