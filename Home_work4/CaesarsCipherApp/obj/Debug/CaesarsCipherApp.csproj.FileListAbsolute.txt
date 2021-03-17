@@ -1,0 +1,10 @@
+D:\Учеба\CS3\Home_work4\CaesarsCipherApp\bin\Debug\CaesarsCipherApp.exe.config
+D:\Учеба\CS3\Home_work4\CaesarsCipherApp\bin\Debug\CaesarsCipherApp.exe
+D:\Учеба\CS3\Home_work4\CaesarsCipherApp\bin\Debug\CaesarsCipherApp.pdb
+D:\Учеба\CS3\Home_work4\CaesarsCipherApp\bin\Debug\CaesarsСipher.dll
+D:\Учеба\CS3\Home_work4\CaesarsCipherApp\bin\Debug\CaesarsСipher.pdb
+D:\Учеба\CS3\Home_work4\CaesarsCipherApp\obj\Debug\CaesarsCipherApp.csprojAssemblyReference.cache
+D:\Учеба\CS3\Home_work4\CaesarsCipherApp\obj\Debug\CaesarsCipherApp.csproj.CoreCompileInputs.cache
+D:\Учеба\CS3\Home_work4\CaesarsCipherApp\obj\Debug\CaesarsCipherApp.csproj.CopyComplete
+D:\Учеба\CS3\Home_work4\CaesarsCipherApp\obj\Debug\CaesarsCipherApp.exe
+D:\Учеба\CS3\Home_work4\CaesarsCipherApp\obj\Debug\CaesarsCipherApp.pdb

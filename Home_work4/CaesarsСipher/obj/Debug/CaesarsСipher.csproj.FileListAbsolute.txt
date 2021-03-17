@@ -1,0 +1,5 @@
+D:\Учеба\CS3\Home_work4\CaesarsСipher\bin\Debug\CaesarsСipher.dll
+D:\Учеба\CS3\Home_work4\CaesarsСipher\bin\Debug\CaesarsСipher.pdb
+D:\Учеба\CS3\Home_work4\CaesarsСipher\obj\Debug\CaesarsСipher.csproj.CoreCompileInputs.cache
+D:\Учеба\CS3\Home_work4\CaesarsСipher\obj\Debug\CaesarsСipher.dll
+D:\Учеба\CS3\Home_work4\CaesarsСipher\obj\Debug\CaesarsСipher.pdb
