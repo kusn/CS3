@@ -147,3 +147,17 @@ D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\MailerMVVM_MarkupCompile.cache
 D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\MailerMVVM_MarkupCompile.lref
 D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\MailerMVVM.exe
 D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\MailerMVVM.pdb
+D:\Projects\CS3\Home_work4\MailerMVVM\bin\Debug\MailerMVVM.exe.config
+D:\Projects\CS3\Home_work4\MailerMVVM\bin\Debug\MailerMVVM.exe
+D:\Projects\CS3\Home_work4\MailerMVVM\bin\Debug\MailerMVVM.pdb
+D:\Projects\CS3\Home_work4\MailerMVVM\bin\Debug\OurWpfControlsLibrary.dll
+D:\Projects\CS3\Home_work4\MailerMVVM\bin\Debug\OurWpfControlsLibrary.pdb
+D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\View\MainWindow.g.cs
+D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\View\TaskWindow.baml
+D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\View\AboutWindow.baml
+D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\View\MainWindow.baml
+D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\MailerMVVM.g.resources
+D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\MailerMVVM.Properties.Resources.resources
+D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\MailerMVVM.csproj.GenerateResource.cache
+D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\MailerMVVM.csproj.CoreCompileInputs.cache
+D:\Projects\CS3\Home_work4\MailerMVVM\obj\Debug\MailerMVVM.csproj.CopyComplete

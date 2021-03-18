@@ -4,17 +4,17 @@
 exe
 C#
 .cs
-D:\Учеба\CS3\Home_work4\MVVMAccess\obj\Debug\
+D:\Projects\CS3\Home_work4\MVVMAccess\obj\Debug\
 MVVMAccess
 none
 false
 DEBUG;TRACE
-D:\Учеба\CS3\Home_work4\MVVMAccess\App.xaml
+D:\Projects\CS3\Home_work4\MVVMAccess\App.xaml
 1-1711142684
 
-9287065997
+10-1233773418
 131254293103
 View\MainWindow.xaml;
 
-False
+True
 
