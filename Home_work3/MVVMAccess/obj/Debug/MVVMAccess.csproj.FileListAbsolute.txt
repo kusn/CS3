@@ -1,0 +1,47 @@
+D:\ШП\CS-3 20210301\CS_3\MVVMAccess\obj\Debug\App.g.cs
+D:\ШП\CS-3 20210301\CS_3\MVVMAccess\obj\Debug\MVVMAccess_MarkupCompile.cache
+D:\ШП\CS-3 20210301\CS_3\MVVMAccess\bin\Debug\MVVMAccess.exe.config
+D:\ШП\CS-3 20210301\CS_3\MVVMAccess\bin\Debug\MVVMAccess.exe
+D:\ШП\CS-3 20210301\CS_3\MVVMAccess\bin\Debug\MVVMAccess.pdb
+D:\ШП\CS-3 20210301\CS_3\MVVMAccess\obj\Debug\View\MainWindow.g.cs
+D:\ШП\CS-3 20210301\CS_3\MVVMAccess\obj\Debug\MVVMAccess_MarkupCompile.lref
+D:\ШП\CS-3 20210301\CS_3\MVVMAccess\obj\Debug\View\MainWindow.baml
+D:\ШП\CS-3 20210301\CS_3\MVVMAccess\obj\Debug\MVVMAccess.g.resources
+D:\ШП\CS-3 20210301\CS_3\MVVMAccess\obj\Debug\MVVMAccess.Properties.Resources.resources
+D:\ШП\CS-3 20210301\CS_3\MVVMAccess\obj\Debug\MVVMAccess.csproj.GenerateResource.cache
+D:\ШП\CS-3 20210301\CS_3\MVVMAccess\obj\Debug\MVVMAccess.csproj.CoreCompileInputs.cache
+D:\ШП\CS-3 20210301\CS_3\MVVMAccess\obj\Debug\MVVMAccess.exe
+D:\ШП\CS-3 20210301\CS_3\MVVMAccess\obj\Debug\MVVMAccess.pdb
+D:\ШП\CS-3 20210301\CS_3\MVVMAccess\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Учеба\CS3\Home_work3\MVVMAccess\bin\Debug\MVVMAccess.exe.config
+D:\Учеба\CS3\Home_work3\MVVMAccess\bin\Debug\MVVMAccess.exe
+D:\Учеба\CS3\Home_work3\MVVMAccess\bin\Debug\MVVMAccess.pdb
+D:\Учеба\CS3\Home_work3\MVVMAccess\obj\Debug\MVVMAccess.csprojAssemblyReference.cache
+D:\Учеба\CS3\Home_work3\MVVMAccess\obj\Debug\View\MainWindow.g.cs
+D:\Учеба\CS3\Home_work3\MVVMAccess\obj\Debug\App.g.cs
+D:\Учеба\CS3\Home_work3\MVVMAccess\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Учеба\CS3\Home_work3\MVVMAccess\obj\Debug\MVVMAccess_MarkupCompile.cache
+D:\Учеба\CS3\Home_work3\MVVMAccess\obj\Debug\MVVMAccess_MarkupCompile.lref
+D:\Учеба\CS3\Home_work3\MVVMAccess\obj\Debug\View\MainWindow.baml
+D:\Учеба\CS3\Home_work3\MVVMAccess\obj\Debug\MVVMAccess.g.resources
+D:\Учеба\CS3\Home_work3\MVVMAccess\obj\Debug\MVVMAccess.Properties.Resources.resources
+D:\Учеба\CS3\Home_work3\MVVMAccess\obj\Debug\MVVMAccess.csproj.GenerateResource.cache
+D:\Учеба\CS3\Home_work3\MVVMAccess\obj\Debug\MVVMAccess.csproj.CoreCompileInputs.cache
+D:\Учеба\CS3\Home_work3\MVVMAccess\obj\Debug\MVVMAccess.exe
+D:\Учеба\CS3\Home_work3\MVVMAccess\obj\Debug\MVVMAccess.pdb
+D:\Projects\CS3\Home_work3\MVVMAccess\bin\Debug\MVVMAccess.exe.config
+D:\Projects\CS3\Home_work3\MVVMAccess\bin\Debug\MVVMAccess.exe
+D:\Projects\CS3\Home_work3\MVVMAccess\bin\Debug\MVVMAccess.pdb
+D:\Projects\CS3\Home_work3\MVVMAccess\obj\Debug\MVVMAccess.csprojAssemblyReference.cache
+D:\Projects\CS3\Home_work3\MVVMAccess\obj\Debug\View\MainWindow.g.cs
+D:\Projects\CS3\Home_work3\MVVMAccess\obj\Debug\App.g.cs
+D:\Projects\CS3\Home_work3\MVVMAccess\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Projects\CS3\Home_work3\MVVMAccess\obj\Debug\MVVMAccess_MarkupCompile.cache
+D:\Projects\CS3\Home_work3\MVVMAccess\obj\Debug\MVVMAccess_MarkupCompile.lref
+D:\Projects\CS3\Home_work3\MVVMAccess\obj\Debug\View\MainWindow.baml
+D:\Projects\CS3\Home_work3\MVVMAccess\obj\Debug\MVVMAccess.g.resources
+D:\Projects\CS3\Home_work3\MVVMAccess\obj\Debug\MVVMAccess.Properties.Resources.resources
+D:\Projects\CS3\Home_work3\MVVMAccess\obj\Debug\MVVMAccess.csproj.GenerateResource.cache
+D:\Projects\CS3\Home_work3\MVVMAccess\obj\Debug\MVVMAccess.csproj.CoreCompileInputs.cache
+D:\Projects\CS3\Home_work3\MVVMAccess\obj\Debug\MVVMAccess.exe
+D:\Projects\CS3\Home_work3\MVVMAccess\obj\Debug\MVVMAccess.pdb
