@@ -33,17 +33,35 @@ namespace MailerMVVM.ViewModel
         {
             get
             {
-                return new DelegateCommand(MIExitExecute, MIExitCanExecute);
+                return new DelegateCommand((obj) =>
+                {
+                    (obj as MainWindow).Close();
+                }, (obj) => true);
             }
         }
 
-        private void MIExitExecute(object obj)
+        public ICommand MITaskClick
         {
+            get
+            {
+                return new DelegateCommand((obj) =>
+                {
+                    View.TaskWindow taskWindow = new View.TaskWindow();
+                    taskWindow.Show();
+                }, (obj) => true);
+            }
         }
 
-        private bool MIExitCanExecute(object obj)
+        public ICommand MIAboutClick
         {
-            return true;
+            get
+            {
+                return new DelegateCommand((obj) =>
+                {
+                    View.AboutWindow aboutWindow = new View.AboutWindow();
+                    aboutWindow.Show();
+                }, (obj) => true);
+            }
         }
     }
 }

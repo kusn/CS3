@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MailerMVVM"
         mc:Ignorable="d"
-        Title="TaskWindow" Height="425" Width="375">
+        Title="TaskWindow" x:Name="taskWindow" Height="425" Width="375">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="100*"/>
