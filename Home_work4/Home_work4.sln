@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailerMVVM", "MailerMVVM\MailerMVVM.csproj", "{768E5AE8-1FF5-4DF7-8B26-825ABBAA8295}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMAccess", "MVVMAccess\MVVMAccess.csproj", "{52FD8521-9E56-413E-95B4-70124B344330}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaesarsСipher", "CaesarsСipher\CaesarsСipher.csproj", "{8F6E8905-4034-4EDB-950C-C84385EA1AA2}"
@@ -15,16 +13,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaesarsСipherUnitTest", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegExValidationWPF", "RegExValidationWPF\RegExValidationWPF.csproj", "{344A9CF9-D5F0-4D6C-AD7E-4690A5E7137B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegExValidationWPFTests", "RegExValidationWPFTests\RegExValidationWPFTests.csproj", "{A940D9CA-DB24-4715-9DE8-7EF9E458AC7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{768E5AE8-1FF5-4DF7-8B26-825ABBAA8295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{768E5AE8-1FF5-4DF7-8B26-825ABBAA8295}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{768E5AE8-1FF5-4DF7-8B26-825ABBAA8295}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{768E5AE8-1FF5-4DF7-8B26-825ABBAA8295}.Release|Any CPU.Build.0 = Release|Any CPU
 		{52FD8521-9E56-413E-95B4-70124B344330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{52FD8521-9E56-413E-95B4-70124B344330}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52FD8521-9E56-413E-95B4-70124B344330}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +41,10 @@ Global
 		{344A9CF9-D5F0-4D6C-AD7E-4690A5E7137B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{344A9CF9-D5F0-4D6C-AD7E-4690A5E7137B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{344A9CF9-D5F0-4D6C-AD7E-4690A5E7137B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A940D9CA-DB24-4715-9DE8-7EF9E458AC7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A940D9CA-DB24-4715-9DE8-7EF9E458AC7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A940D9CA-DB24-4715-9DE8-7EF9E458AC7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A940D9CA-DB24-4715-9DE8-7EF9E458AC7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

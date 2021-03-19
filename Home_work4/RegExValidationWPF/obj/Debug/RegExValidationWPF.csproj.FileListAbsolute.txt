@@ -13,3 +13,4 @@ D:\Projects\CS3\Home_work4\RegExValidationWPF\obj\Debug\RegExValidationWPF.cspro
 D:\Projects\CS3\Home_work4\RegExValidationWPF\obj\Debug\RegExValidationWPF.exe
 D:\Projects\CS3\Home_work4\RegExValidationWPF\obj\Debug\RegExValidationWPF.pdb
 D:\Projects\CS3\Home_work4\RegExValidationWPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Projects\CS3\Home_work4\RegExValidationWPF\obj\Debug\RegExValidationWPF.csprojAssemblyReference.cache
