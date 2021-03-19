@@ -1,0 +1,15 @@
+D:\Projects\CS3\Home_work4\RegExValidationWPF\bin\Debug\RegExValidationWPF.exe.config
+D:\Projects\CS3\Home_work4\RegExValidationWPF\bin\Debug\RegExValidationWPF.exe
+D:\Projects\CS3\Home_work4\RegExValidationWPF\bin\Debug\RegExValidationWPF.pdb
+D:\Projects\CS3\Home_work4\RegExValidationWPF\obj\Debug\View\MainWindow.g.cs
+D:\Projects\CS3\Home_work4\RegExValidationWPF\obj\Debug\App.g.cs
+D:\Projects\CS3\Home_work4\RegExValidationWPF\obj\Debug\RegExValidationWPF_MarkupCompile.cache
+D:\Projects\CS3\Home_work4\RegExValidationWPF\obj\Debug\RegExValidationWPF_MarkupCompile.lref
+D:\Projects\CS3\Home_work4\RegExValidationWPF\obj\Debug\View\MainWindow.baml
+D:\Projects\CS3\Home_work4\RegExValidationWPF\obj\Debug\RegExValidationWPF.g.resources
+D:\Projects\CS3\Home_work4\RegExValidationWPF\obj\Debug\RegExValidationWPF.Properties.Resources.resources
+D:\Projects\CS3\Home_work4\RegExValidationWPF\obj\Debug\RegExValidationWPF.csproj.GenerateResource.cache
+D:\Projects\CS3\Home_work4\RegExValidationWPF\obj\Debug\RegExValidationWPF.csproj.CoreCompileInputs.cache
+D:\Projects\CS3\Home_work4\RegExValidationWPF\obj\Debug\RegExValidationWPF.exe
+D:\Projects\CS3\Home_work4\RegExValidationWPF\obj\Debug\RegExValidationWPF.pdb
+D:\Projects\CS3\Home_work4\RegExValidationWPF\obj\Debug\GeneratedInternalTypeHelper.g.cs

@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaesarsCipherApp", "Caesars
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaesarsСipherUnitTest", "CaesarsСipherUnitTest\CaesarsСipherUnitTest.csproj", "{8FE08E8F-DB47-4DEA-8BDA-40333CBB81D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OurWpfControlsLibrary", "OurWpfControlsLibrary\OurWpfControlsLibrary.csproj", "{87602FFB-12E1-429E-85C2-6294DA8C084A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegExValidationWPF", "RegExValidationWPF\RegExValidationWPF.csproj", "{344A9CF9-D5F0-4D6C-AD7E-4690A5E7137B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{8FE08E8F-DB47-4DEA-8BDA-40333CBB81D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FE08E8F-DB47-4DEA-8BDA-40333CBB81D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FE08E8F-DB47-4DEA-8BDA-40333CBB81D7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{87602FFB-12E1-429E-85C2-6294DA8C084A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{87602FFB-12E1-429E-85C2-6294DA8C084A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{87602FFB-12E1-429E-85C2-6294DA8C084A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{87602FFB-12E1-429E-85C2-6294DA8C084A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{344A9CF9-D5F0-4D6C-AD7E-4690A5E7137B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{344A9CF9-D5F0-4D6C-AD7E-4690A5E7137B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{344A9CF9-D5F0-4D6C-AD7E-4690A5E7137B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{344A9CF9-D5F0-4D6C-AD7E-4690A5E7137B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
