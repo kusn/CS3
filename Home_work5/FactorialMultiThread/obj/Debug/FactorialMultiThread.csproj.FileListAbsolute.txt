@@ -5,3 +5,10 @@ D:\Projects\CS3\Home_work5\FactorialMultiThread\obj\Debug\FactorialMultiThread.c
 D:\Projects\CS3\Home_work5\FactorialMultiThread\obj\Debug\FactorialMultiThread.csproj.CoreCompileInputs.cache
 D:\Projects\CS3\Home_work5\FactorialMultiThread\obj\Debug\FactorialMultiThread.exe
 D:\Projects\CS3\Home_work5\FactorialMultiThread\obj\Debug\FactorialMultiThread.pdb
+D:\Учеба\CS3\Home_work5\FactorialMultiThread\bin\Debug\FactorialMultiThread.exe.config
+D:\Учеба\CS3\Home_work5\FactorialMultiThread\bin\Debug\FactorialMultiThread.exe
+D:\Учеба\CS3\Home_work5\FactorialMultiThread\bin\Debug\FactorialMultiThread.pdb
+D:\Учеба\CS3\Home_work5\FactorialMultiThread\obj\Debug\FactorialMultiThread.csprojAssemblyReference.cache
+D:\Учеба\CS3\Home_work5\FactorialMultiThread\obj\Debug\FactorialMultiThread.csproj.CoreCompileInputs.cache
+D:\Учеба\CS3\Home_work5\FactorialMultiThread\obj\Debug\FactorialMultiThread.exe
+D:\Учеба\CS3\Home_work5\FactorialMultiThread\obj\Debug\FactorialMultiThread.pdb

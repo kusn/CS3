@@ -1,0 +1,7 @@
+D:\Учеба\CS3\Home_work5\SumOfNumbersMultiThread\bin\Debug\SumOfNumbersMultiThread.exe.config
+D:\Учеба\CS3\Home_work5\SumOfNumbersMultiThread\bin\Debug\SumOfNumbersMultiThread.exe
+D:\Учеба\CS3\Home_work5\SumOfNumbersMultiThread\bin\Debug\SumOfNumbersMultiThread.pdb
+D:\Учеба\CS3\Home_work5\SumOfNumbersMultiThread\obj\Debug\SumOfNumbersMultiThread.csprojAssemblyReference.cache
+D:\Учеба\CS3\Home_work5\SumOfNumbersMultiThread\obj\Debug\SumOfNumbersMultiThread.csproj.CoreCompileInputs.cache
+D:\Учеба\CS3\Home_work5\SumOfNumbersMultiThread\obj\Debug\SumOfNumbersMultiThread.exe
+D:\Учеба\CS3\Home_work5\SumOfNumbersMultiThread\obj\Debug\SumOfNumbersMultiThread.pdb

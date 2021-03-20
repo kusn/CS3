@@ -1,7 +1,7 @@
 ﻿//Кудряшов Сергей
 
 //1. Написать приложение, считающее в раздельных потоках:
-//a.факториал числа N, которое вводится с клавиатуру;
+//b. сумму целых чисел до N, которое также вводится с клавиатуры.
 
 using System;
 using System.Collections.Generic;
@@ -10,11 +10,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 
-namespace FactorialMultiThread
+namespace SumOfNumbersMultiThread
 {
     class Program
     {
-        static double fact = 1;
+        static double sum = 0;
         static object locker = new object();
 
         static void Main(string[] args)
@@ -22,9 +22,9 @@ namespace FactorialMultiThread
             int n;
             int processorCount = System.Environment.ProcessorCount;
             int part;
-            
 
-            Console.WriteLine("Введите число, для которого нужно посчитать факториал");
+
+            Console.WriteLine("Введите число: ");
             Int32.TryParse(Console.ReadLine(), out n);
             InitialData initialData = new InitialData
             {
@@ -34,10 +34,9 @@ namespace FactorialMultiThread
 
             part = initialData.Finish / processorCount;
 
-            DateTime startTime = DateTime.Now;
             if (part == 0)
             {
-                Thread thread = new Thread(new ParameterizedThreadStart(Factorial))
+                Thread thread = new Thread(new ParameterizedThreadStart(SumOfNamber))
                 {
                     Name = "0"
                 };
@@ -60,57 +59,43 @@ namespace FactorialMultiThread
                         id.Finish = initialData.Finish;
                     }
 
-                    Thread thread = new Thread(new ParameterizedThreadStart(Factorial))
+                    Thread thread = new Thread(new ParameterizedThreadStart(SumOfNamber))
                     {
                         Name = (i).ToString()
                     };
 
                     Console.WriteLine("---Запустился поток: " + thread.Name);
-                    thread.Start(id);                    
+                    thread.Start(id);
                 }
             }
-            Console.WriteLine(System.Environment.NewLine + $"Время выполнения в мультипотоке: {DateTime.Now - startTime}");
-
-            Thread.Sleep(5000);     // Почему-то нужно делать задержку, для правильного вывода следующей строчки
+            Thread.Sleep(1000);     // Почему-то нужно делать задержку, для правильного вывода следующей строчки
             Console.WriteLine();
-            Console.WriteLine(System.Environment.NewLine + $"Итоговый факториал равен: {fact}");
-
-            Thread.Sleep(5000);
-            fact = 1;            
-            Console.WriteLine(System.Environment.NewLine);
-            startTime = DateTime.Now;
-            Factorial(initialData);
-            Console.WriteLine(System.Environment.NewLine + $"Время выполнения в однопотоке: {DateTime.Now - startTime}");
+            Console.WriteLine($"Итоговая сумма равна: {sum}");
 
             Console.ReadLine();
         }
 
-        static void Factorial(object obj)
+        static void SumOfNamber(object obj)
         {
             lock (locker)
             {
                 InitialData initialData = (InitialData)obj;
-                double tFact = 1;
-                int start = initialData.Start;
+                double tSum = 0;
+                int start = initialData.Start;                
 
-                if (start == 0)
-                    start = 1;
+                for (int i = start; i <= initialData.Finish; i++)
+                        tSum = tSum + i;
 
-                if (initialData.Finish == 0) tFact = 1;
-
-                else for (int i = start; i <= initialData.Finish; i++)
-                        tFact = tFact * i;
-
-                Console.WriteLine($"Частичный факториал между числами от {initialData.Start} до  {initialData.Finish} равен: {tFact}");
-                fact = fact * tFact;
-                Console.WriteLine($"Факториал равен: {fact}");
+                Console.WriteLine($"Сумма между числами от {initialData.Start} до  {initialData.Finish} равна: {tSum}");
+                sum = sum + tSum;
+                Console.WriteLine($"Сумма равна: {sum}");
             }
         }
 
         public class InitialData
         {
             public int Start { get; set; }
-            public int Finish { get; set; }            
+            public int Finish { get; set; }
         }
     }
 }
