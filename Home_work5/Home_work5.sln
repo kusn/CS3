@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactorialMultiThread", "Fac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumOfNumbersMultiThread", "SumOfNumbersMultiThread\SumOfNumbersMultiThread.csproj", "{66CCC131-1FE9-434A-B425-446B3D4E924A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsvToTxtMultiThread", "CsvToTxtMultiThread\CsvToTxtMultiThread.csproj", "{DF77CB7E-0419-4679-A363-29C334392AAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{66CCC131-1FE9-434A-B425-446B3D4E924A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66CCC131-1FE9-434A-B425-446B3D4E924A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66CCC131-1FE9-434A-B425-446B3D4E924A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF77CB7E-0419-4679-A363-29C334392AAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF77CB7E-0419-4679-A363-29C334392AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF77CB7E-0419-4679-A363-29C334392AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF77CB7E-0419-4679-A363-29C334392AAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
