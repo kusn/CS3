@@ -1,0 +1,7 @@
+D:\Учеба\CS3\Home_work6\MatrixMultiplication\bin\Debug\MatrixMultiplication.exe.config
+D:\Учеба\CS3\Home_work6\MatrixMultiplication\bin\Debug\MatrixMultiplication.exe
+D:\Учеба\CS3\Home_work6\MatrixMultiplication\bin\Debug\MatrixMultiplication.pdb
+D:\Учеба\CS3\Home_work6\MatrixMultiplication\obj\Debug\MatrixMultiplication.csprojAssemblyReference.cache
+D:\Учеба\CS3\Home_work6\MatrixMultiplication\obj\Debug\MatrixMultiplication.csproj.CoreCompileInputs.cache
+D:\Учеба\CS3\Home_work6\MatrixMultiplication\obj\Debug\MatrixMultiplication.exe
+D:\Учеба\CS3\Home_work6\MatrixMultiplication\obj\Debug\MatrixMultiplication.pdb
