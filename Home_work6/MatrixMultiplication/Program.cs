@@ -16,9 +16,11 @@ namespace MatrixMultiplication
     class Program
     {
         static Random rnd = new Random();
-        static int[,] matrix1 = new int[100, 100];
-        static int[,] matrix2 = new int[100, 100];
-        static int[,] resultMatrix = new int[100, 100];
+        static int leng = 3;
+        static int[,] matrix1 = new int[leng, leng];
+        static int[,] matrix2 = new int[leng, leng];
+        static int[,] resultMatrix = new int[leng, leng];
+        static object locker = new object();
 
         static void Main(string[] args)
         {
@@ -31,14 +33,17 @@ namespace MatrixMultiplication
             Console.WriteLine("Вторая матрица: ");
             ScreenMatrix(matrix2);
 
+            Console.WriteLine("Результат умножения матриц:");
+            Parallel.For(0, leng, MatrixMulti);
+
             Console.ReadLine();
         }
 
         static int[,] GetMatrix()
         {
-            int[,] matrix = new int[100, 100];
-            for(int i = 0; i < 100; i++)
-                for(int j = 0; j < 100; j++)
+            int[,] matrix = new int[leng, leng];
+            for(int i = 0; i < leng; i++)
+                for(int j = 0; j < leng; j++)
                 {
                     matrix[i, j] = rnd.Next(0, 10); 
                 }
@@ -57,14 +62,24 @@ namespace MatrixMultiplication
                 }
         }
 
-        static int[,] MatrixMulti(int[,] matrix1, int[,] matrix2)
-        {
-            int[,] result = new int[100, 100];
+        static void MatrixMulti(int index)
+        {            
+            //lock(locker)
+            for (int j = 0; j < leng; j++)
+            {
+                int result = 0;
+                for (int i = 0; i < leng; i++)
+                {
+                    result = result + matrix1[index, i] * matrix2[i, index];
+                }
+                resultMatrix[index, j] = result;
 
-
-
-            return result;
-
+                if (j < leng - 1)
+                    Console.Write(resultMatrix[index, j] + " ");
+                else
+                    Console.WriteLine(resultMatrix[index, j]);
+               
+            }
         }
     }
 }
