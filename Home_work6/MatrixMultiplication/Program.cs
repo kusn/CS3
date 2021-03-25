@@ -19,8 +19,7 @@ namespace MatrixMultiplication
         static int leng = 3;
         static int[,] matrix1 = new int[leng, leng];
         static int[,] matrix2 = new int[leng, leng];
-        static int[,] resultMatrix = new int[leng, leng];
-        static object locker = new object();
+        static int[,] resultMatrix = new int[leng, leng];        
 
         static void Main(string[] args)
         {
@@ -35,6 +34,11 @@ namespace MatrixMultiplication
 
             Console.WriteLine("Результат умножения матриц:");
             Parallel.For(0, leng, MatrixMulti);
+
+            /*for(int i = 0; i < leng; i++)
+            {
+                MatrixMulti(i);
+            }*/
 
             Console.ReadLine();
         }
@@ -64,21 +68,17 @@ namespace MatrixMultiplication
 
         static void MatrixMulti(int index)
         {            
-            //lock(locker)
-            for (int j = 0; j < leng; j++)
-            {
-                int result = 0;
-                for (int i = 0; i < leng; i++)
+            for(int i = 0; i < leng; i++)
+            {            
+                for (int j = 0; j < leng; j++)
                 {
-                    result = result + matrix1[index, i] * matrix2[i, index];
+                    resultMatrix[index, i] += matrix1[index, j] * matrix2[j, i];
                 }
-                resultMatrix[index, j] = result;
-
-                if (j < leng - 1)
-                    Console.Write(resultMatrix[index, j] + " ");
+                
+                if (i < leng - 1)
+                    Console.Write(resultMatrix[index, i] + " ");
                 else
-                    Console.WriteLine(resultMatrix[index, j]);
-               
+                    Console.WriteLine(resultMatrix[index, i]);
             }
         }
     }

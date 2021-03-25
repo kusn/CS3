@@ -1,0 +1,7 @@
+D:\Учеба\CS3\Home_work6\ParsingFiles\bin\Debug\ParsingFiles.exe.config
+D:\Учеба\CS3\Home_work6\ParsingFiles\bin\Debug\ParsingFiles.exe
+D:\Учеба\CS3\Home_work6\ParsingFiles\bin\Debug\ParsingFiles.pdb
+D:\Учеба\CS3\Home_work6\ParsingFiles\obj\Debug\ParsingFiles.csprojAssemblyReference.cache
+D:\Учеба\CS3\Home_work6\ParsingFiles\obj\Debug\ParsingFiles.csproj.CoreCompileInputs.cache
+D:\Учеба\CS3\Home_work6\ParsingFiles\obj\Debug\ParsingFiles.exe
+D:\Учеба\CS3\Home_work6\ParsingFiles\obj\Debug\ParsingFiles.pdb
