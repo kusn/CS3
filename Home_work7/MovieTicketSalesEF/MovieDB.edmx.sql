@@ -31,7 +31,7 @@ GO
 CREATE TABLE [dbo].[Orders] (
     [OrderId] int IDENTITY(1,1) NOT NULL,
     [TiketsCount] int  NOT NULL,
-    [OrderTime] time  NOT NULL,
+    [OrderTime] nvarchar(max)  NOT NULL,
     [SeanceSeanceId] int  NOT NULL
 );
 GO

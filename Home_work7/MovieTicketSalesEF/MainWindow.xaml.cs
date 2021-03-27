@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using System.Data.Entity;
 using Microsoft.Reporting.WinForms;
 using System.Data.Entity.Core.Objects;
+using System.Windows.Forms.Integration;
 
 namespace MovieTicketSalesEF
 {
@@ -36,12 +37,28 @@ namespace MovieTicketSalesEF
             _dbContainer = new MovieDBContainer();
             _dbContainer.Seances.Load();
             Grid.ItemsSource = _dbContainer.Seances.Local;
+            ReportViewer.Load += ReportViewer_Load;
+        }
+
+        private void ReportViewer_Load(object sender, EventArgs e)
+        {
+            ReportDataSource reportDataSource = new ReportDataSource();
+            MovieDBDataSet dataSet = new MovieDBDataSet();
+            //_Database_mdfDataSet dataset = new _Database_mdfDataSet();
+            dataSet.BeginInit();
+            reportDataSource.Name = "DataSet";
+            reportDataSource.Value = dataSet.Orders;
+            ReportViewer.LocalReport.DataSources.Add(reportDataSource);
+            ReportViewer.LocalReport.ReportPath = "../../Report.rdlc";
+            dataSet.EndInit();
+            MovieDBDataSetTableAdapters.OrdersTableAdapter ordersTableAdapter = new MovieDBDataSetTableAdapters.OrdersTableAdapter { ClearBeforeFill = true };            
+            ordersTableAdapter.Fill(dataSet.Orders);
+            ReportViewer.RefreshReport();
         }
 
         private void btnAddSeance_Click(object sender, RoutedEventArgs e)
         {
             WndAddSeance wndAddSeance = new WndAddSeance();
-            //wndAddSeance.Show();
 
             if (wndAddSeance.ShowDialog() == true)
             {
@@ -52,9 +69,27 @@ namespace MovieTicketSalesEF
 
         private void cmmiBuy_Click(object sender, RoutedEventArgs e)
         {
-            WndBuy wndBuy = new WndBuy();
-            wndBuy.Show();
-            //wndBuy.ShowDialog();
+            Seance seance = new Seance();
+            seance = (Seance)Grid.SelectedItem;            
+            new WndBuy(seance.SeanceId).ShowDialog();
+        }
+
+        private void btnDelSeance_Click(object sender, RoutedEventArgs e)
+        {
+            Seance seance = new Seance();
+            seance = (Seance)Grid.SelectedItem;
+            if (seance == null)
+                MessageBox.Show("Выберите сеанс");
+            else
+            {
+                _dbContainer.Seances.Remove(seance);
+                if (_dbContainer.SaveChanges() != 0)
+                {
+                    MessageBox.Show("Сеанс удалён!");
+                    _dbContainer.Seances.Load();
+                    Grid.Items.Refresh();
+                }
+            }
         }
     }
 }
