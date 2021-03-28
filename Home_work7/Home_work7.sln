@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTicketSalesEF", "Movie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xceed.Wpf.Toolkit", "Xceed.Wpf.Toolkit\Xceed.Wpf.Toolkit.csproj", "{72E591D6-8F83-4D8C-8F67-9C325E623234}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsvToFromDBEF", "CsvToFromDBEF\CsvToFromDBEF.csproj", "{211E2563-AEBB-437A-99B8-039569D0E5AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{72E591D6-8F83-4D8C-8F67-9C325E623234}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72E591D6-8F83-4D8C-8F67-9C325E623234}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72E591D6-8F83-4D8C-8F67-9C325E623234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{211E2563-AEBB-437A-99B8-039569D0E5AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{211E2563-AEBB-437A-99B8-039569D0E5AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{211E2563-AEBB-437A-99B8-039569D0E5AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{211E2563-AEBB-437A-99B8-039569D0E5AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

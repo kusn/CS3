@@ -83,7 +83,7 @@ namespace MovieTicketSalesEF
                 _dbContainer.Orders.Load();
                 grdOrders.Items.Refresh();
 
-                ReportViewer.Load += ReportViewer_Load;
+                
             }            
         }
 
