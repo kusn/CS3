@@ -201,17 +201,10 @@
       <DependentUpon>MovieDB.edmx</DependentUpon>
     </Content>
     <Content Include="MovieDB.edmx.sql" />
-    <Content Include="MovieDB.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="MovieDB.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>MovieDB.cs</LastGenOutput>
       <DependentUpon>MovieDB.edmx</DependentUpon>
-    </Content>
-    <Content Include="MovieDB_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>MovieDB.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

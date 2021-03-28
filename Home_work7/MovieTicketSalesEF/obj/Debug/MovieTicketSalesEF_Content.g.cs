@@ -10,8 +10,6 @@
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("moviedb.context.tt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("moviedb.edmx.sql")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("moviedb.mdf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("moviedb.tt")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("moviedb_log.ldf")]
 
 

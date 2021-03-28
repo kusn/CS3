@@ -25,6 +25,8 @@ namespace MovieTicketSalesEF
     public partial class MainWindow : Window
     {
         MovieDBContainer _dbContainer;
+        ReportDataSource reportDataSource;
+        MovieDBDataSet dataSet;
 
         public MainWindow()
         {
@@ -42,10 +44,11 @@ namespace MovieTicketSalesEF
             ReportViewer.Load += ReportViewer_Load;
         }
 
+        //Создаём отчёт
         private void ReportViewer_Load(object sender, EventArgs e)
         {
-            ReportDataSource reportDataSource = new ReportDataSource();
-            MovieDBDataSet dataSet = new MovieDBDataSet();            
+            reportDataSource = new ReportDataSource();
+            dataSet = new MovieDBDataSet();            
             dataSet.BeginInit();
             reportDataSource.Name = "DataSet";
             reportDataSource.Value = dataSet.Orders;
@@ -57,6 +60,7 @@ namespace MovieTicketSalesEF
             ReportViewer.RefreshReport();
         }
 
+        //Добавляем сеанс
         private void btnAddSeance_Click(object sender, RoutedEventArgs e)
         {
             WndAddSeance wndAddSeance = new WndAddSeance();
@@ -68,6 +72,7 @@ namespace MovieTicketSalesEF
             }
         }
 
+        //Создаем заказ
         private void cmmiBuy_Click(object sender, RoutedEventArgs e)
         {
             Seance seance = new Seance();
@@ -77,10 +82,12 @@ namespace MovieTicketSalesEF
             {
                 _dbContainer.Orders.Load();
                 grdOrders.Items.Refresh();
-            }
-            ReportViewer.RefreshReport();
+
+                ReportViewer.Load += ReportViewer_Load;
+            }            
         }
 
+        //Удаляем заказ
         private void btnDelSeance_Click(object sender, RoutedEventArgs e)
         {
             Seance seance = new Seance();

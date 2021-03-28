@@ -30,8 +30,6 @@ D:\Учеба\CS3\Home_work7\MovieTicketSalesEF\obj\Debug\WndBuy.baml
 D:\Учеба\CS3\Home_work7\MovieTicketSalesEF\bin\Debug\Xceed.Wpf.Toolkit.dll
 D:\Учеба\CS3\Home_work7\MovieTicketSalesEF\bin\Debug\Xceed.Wpf.Toolkit.pdb
 D:\Учеба\CS3\Home_work7\MovieTicketSalesEF\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
-D:\Учеба\CS3\Home_work7\MovieTicketSalesEF\bin\Debug\MovieDB.mdf
-D:\Учеба\CS3\Home_work7\MovieTicketSalesEF\bin\Debug\MovieDB_log.ldf
 D:\Учеба\CS3\Home_work7\MovieTicketSalesEF\obj\Debug\RdlCompile.cache
 D:\Учеба\CS3\Home_work7\MovieTicketSalesEF\obj\Debug\RdlCompile.compiled
 D:\Учеба\CS3\Home_work7\MovieTicketSalesEF\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
