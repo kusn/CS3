@@ -29,9 +29,11 @@ namespace MovieTicketSalesEF
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(tbName.Text) && !string.IsNullOrWhiteSpace(tpTime.Text))
+            //if (!string.IsNullOrWhiteSpace(tbName.Text) && !string.IsNullOrWhiteSpace(tpTime.Text))
+            if (!string.IsNullOrWhiteSpace(tbName.Text) && !string.IsNullOrWhiteSpace(dpTime.SelectedDate.Value.TimeOfDay.ToString()))
             {
-                _dbContainer.Seances.Add(new Seance { MovieName = tbName.Text, SeanceTime = tpTime.TimeInterval });
+                //_dbContainer.Seances.Add(new Seance { MovieName = tbName.Text, SeanceTime = tpTime.TimeInterval });
+                _dbContainer.Seances.Add(new Seance { MovieName = tbName.Text, SeanceTime = dpTime.SelectedDate.Value.TimeOfDay });
                 if (_dbContainer.SaveChanges() != 0)
                 {
                     MessageBox.Show("Сеанс добавлен!");

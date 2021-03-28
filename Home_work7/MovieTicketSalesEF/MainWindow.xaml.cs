@@ -36,15 +36,16 @@ namespace MovieTicketSalesEF
         {
             _dbContainer = new MovieDBContainer();
             _dbContainer.Seances.Load();
+            _dbContainer.Orders.Load();
             Grid.ItemsSource = _dbContainer.Seances.Local;
+            grdOrders.ItemsSource = _dbContainer.Orders.Local;
             ReportViewer.Load += ReportViewer_Load;
         }
 
         private void ReportViewer_Load(object sender, EventArgs e)
         {
             ReportDataSource reportDataSource = new ReportDataSource();
-            MovieDBDataSet dataSet = new MovieDBDataSet();
-            //_Database_mdfDataSet dataset = new _Database_mdfDataSet();
+            MovieDBDataSet dataSet = new MovieDBDataSet();            
             dataSet.BeginInit();
             reportDataSource.Name = "DataSet";
             reportDataSource.Value = dataSet.Orders;
@@ -71,8 +72,13 @@ namespace MovieTicketSalesEF
         {
             Seance seance = new Seance();
             seance = (Seance)Grid.SelectedItem;            
-            new WndBuy(seance.SeanceId).ShowDialog();
-            _dbContainer.Orders.Load();
+            WndBuy wndBuy =  new WndBuy(seance.SeanceId);
+            if (wndBuy.ShowDialog() == true)
+            {
+                _dbContainer.Orders.Load();
+                grdOrders.Items.Refresh();
+            }
+            ReportViewer.RefreshReport();
         }
 
         private void btnDelSeance_Click(object sender, RoutedEventArgs e)

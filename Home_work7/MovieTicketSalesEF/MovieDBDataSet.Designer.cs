@@ -448,7 +448,6 @@ namespace MovieTicketSalesEF {
                 this.columnOrderId.AutoIncrementSeed = -1;
                 this.columnOrderId.AutoIncrementStep = -1;
                 this.columnOrderId.AllowDBNull = false;
-                this.columnOrderId.ReadOnly = true;
                 this.columnOrderId.Unique = true;
                 this.columnTiketsCount.AllowDBNull = false;
                 this.columnOrderTime.AllowDBNull = false;

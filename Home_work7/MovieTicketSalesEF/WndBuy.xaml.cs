@@ -26,30 +26,19 @@ namespace MovieTicketSalesEF
         public WndBuy(int Id)
         {
             InitializeComponent();            
-            ID = Id;
-            this.DataContext = _dbContainer;
+            ID = Id;            
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            _dbContainer = new MovieDBContainer();
-            //_dbContainer.Seances.Load();
+            _dbContainer = new MovieDBContainer();            
             tblName.Text = _dbContainer.Seances.Find(ID).MovieName;
             tblTime.Text = _dbContainer.Seances.Find(ID).SeanceTime.ToString();
         }
 
         private void btnOK_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {                
-                _dbContainer.Orders.Add(new Order { OrderTime = DateTime.Now.TimeOfDay, SeanceSeanceId = ID, TiketsCount = Convert.ToInt32(tbCount.Text) });
-                //_dbContainer.SaveChanges();
-            }
-            catch
-            {
-                MessageBox.Show("Ошибка введённых данных");
-            }
-
+            _dbContainer.Orders.Add(new Order { OrderTime = DateTime.Now.TimeOfDay, SeanceSeanceId = ID, TiketsCount = Convert.ToInt32(tbCount.Text) });             
             if (_dbContainer.SaveChanges() != 0)
             {
                 MessageBox.Show("Заказ оформлен");

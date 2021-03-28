@@ -19,7 +19,7 @@
                 <Button x:Name="btnDelSeance" Content="Удалить сеанс" Grid.Row="1" Click="btnDelSeance_Click"/>
                 <DataGrid x:Name="Grid" Grid.Row="2" AutoGenerateColumns="False" IsReadOnly="True">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="ID" Width="30" Binding="{Binding SeanceID}"/>
+                        <DataGridTextColumn Header="ID" Width="30" Binding="{Binding SeanceId}"/>
                         <DataGridTextColumn Header="Name" Width="300" Binding="{Binding MovieName}"/>
                         <DataGridTextColumn Header="Time" Width="*" Binding="{Binding SeanceTime}"/>
                     </DataGrid.Columns>
@@ -28,6 +28,18 @@
                             <MenuItem x:Name="cmmiBuy" Header="Купить билеты" Click="cmmiBuy_Click"/>
                         </ContextMenu>
                     </DataGrid.ContextMenu>
+                </DataGrid>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Заказы">
+            <Grid>
+                <DataGrid x:Name="grdOrders" AutoGenerateColumns="False" IsReadOnly="True">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Id" Binding="{Binding OrderId}"/>
+                        <DataGridTextColumn Header="OrderTime" Binding="{Binding OrderTime}"/>
+                        <DataGridTextColumn Header="Seance" Binding="{Binding SeanceSeanceId}"/>
+                        <DataGridTextColumn Header="Tikets" Binding="{Binding TiketsCount}"/>
+                    </DataGrid.Columns>
                 </DataGrid>
             </Grid>
         </TabItem>
