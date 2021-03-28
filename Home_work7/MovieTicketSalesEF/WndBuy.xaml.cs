@@ -25,16 +25,15 @@ namespace MovieTicketSalesEF
 
         public WndBuy(int Id)
         {
-            InitializeComponent();
-            _dbContainer = new MovieDBContainer();
-            _dbContainer.Seances.Load();
-            //_dbContainer.Orders.Load();
+            InitializeComponent();            
             ID = Id;
-            //MessageBox.Show(_dbContainer.Seances.Find(Id).MovieName);
+            this.DataContext = _dbContainer;
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            _dbContainer = new MovieDBContainer();
+            //_dbContainer.Seances.Load();
             tblName.Text = _dbContainer.Seances.Find(ID).MovieName;
             tblTime.Text = _dbContainer.Seances.Find(ID).SeanceTime.ToString();
         }
@@ -42,7 +41,7 @@ namespace MovieTicketSalesEF
         private void btnOK_Click(object sender, RoutedEventArgs e)
         {
             try
-            {
+            {                
                 _dbContainer.Orders.Add(new Order { OrderTime = DateTime.Now.TimeOfDay, SeanceSeanceId = ID, TiketsCount = Convert.ToInt32(tbCount.Text) });
                 //_dbContainer.SaveChanges();
             }

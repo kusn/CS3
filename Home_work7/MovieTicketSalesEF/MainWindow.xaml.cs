@@ -72,6 +72,7 @@ namespace MovieTicketSalesEF
             Seance seance = new Seance();
             seance = (Seance)Grid.SelectedItem;            
             new WndBuy(seance.SeanceId).ShowDialog();
+            _dbContainer.Orders.Load();
         }
 
         private void btnDelSeance_Click(object sender, RoutedEventArgs e)
