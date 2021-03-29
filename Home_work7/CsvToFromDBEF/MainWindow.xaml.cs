@@ -25,6 +25,7 @@ namespace CsvToFromDBEF
     {
         ContactsDBContainer _dBContainer;
         List<Contact> contactList = new List<Contact>();
+        List<Contact> contactListToExport = new List<Contact>();
         string fileName = "..\\..\\Example.csv";
 
         public MainWindow()
@@ -54,7 +55,7 @@ namespace CsvToFromDBEF
 
         private void btnExport_Click(object sender, RoutedEventArgs e)
         {
-
+            Export();
         }
 
         private void Import()
@@ -67,6 +68,18 @@ namespace CsvToFromDBEF
                     Contact contact = new Contact { Name = str[0], Email = str[1], Phone = str[2] };
                     contactList.Add(contact);
                 }
+            }
+        }
+
+        private void Export()
+        {
+            using(StreamWriter sw = new StreamWriter(fileName))
+            {
+                List<ContactDB> contactDBList = new List<ContactDB>();
+                contactDBList = _dBContainer.ContactDBSet.ToList();
+                
+                foreach(var v in contactDBList)
+                    sw.WriteLine(v.Name + ";" + v.Email + ";" + v.Phone);
             }
         }
     }
