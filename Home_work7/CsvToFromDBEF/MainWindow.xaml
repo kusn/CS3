@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CsvToFromDBEF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button x:Name="btnImport" Content="Импорт" HorizontalAlignment="Stretch" MinWidth="100" Click="btnImport_Click"/>
+            <Button x:Name="btnExport" Content="Экспорт" HorizontalAlignment="Stretch" MinWidth="100" Click="btnExport_Click"/>
+        </StackPanel>
+        <DataGrid x:Name="dgContacts" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Width="30" Binding="{Binding ContactId}"/>
+                <DataGridTextColumn Header="Name" Width="200" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Email" Width="200" Binding="{Binding Email}"/>
+                <DataGridTextColumn Header="Phone" Width="*" Binding="{Binding Phone}"/>
+            </DataGrid.Columns>
+        </DataGrid>
         
     </Grid>
 </Window>

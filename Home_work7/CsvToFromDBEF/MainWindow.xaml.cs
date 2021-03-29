@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.Entity;
+using System.Data.Entity.Core.Objects;
+using System.IO;
 
 namespace CsvToFromDBEF
 {
@@ -20,9 +23,51 @@ namespace CsvToFromDBEF
     /// </summary>
     public partial class MainWindow : Window
     {
+        ContactsDBContainer _dBContainer;
+        List<Contact> contactList = new List<Contact>();
+        string fileName = "..\\..\\Example.csv";
+
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = _dBContainer;
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            _dBContainer = new ContactsDBContainer();
+            _dBContainer.ContactDBSet.Load();
+            dgContacts.ItemsSource = _dBContainer.ContactDBSet.Local;
+        }
+
+        private void btnImport_Click(object sender, RoutedEventArgs e)
+        {
+            Import();
+            foreach(var contact in contactList)
+            {
+                _dBContainer.ContactDBSet.Add(new ContactDB { Name = contact.Name, Email = contact.Email, Phone = contact.Phone });
+                _dBContainer.SaveChanges();
+            }
+            _dBContainer.ContactDBSet.Load();
+            dgContacts.Items.Refresh();
+        }
+
+        private void btnExport_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Import()
+        {
+            using(StreamReader sr = new StreamReader(fileName))
+            {
+                while(!sr.EndOfStream)
+                {                    
+                    string[] str = sr.ReadLine().Split(';');
+                    Contact contact = new Contact { Name = str[0], Email = str[1], Phone = str[2] };
+                    contactList.Add(contact);
+                }
+            }
         }
     }
 }

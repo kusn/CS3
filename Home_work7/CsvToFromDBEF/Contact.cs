@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace CsvToFromDBEF
 {
-    public static class Contact
+    public class Contact
     {
-        public static string Name { get; set; }
-        public static string Email { get; set; }
-        public static string Phone { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
     }
 }
