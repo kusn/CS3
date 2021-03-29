@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MovieDB.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="MovieDBStoreContainer">
+    <EntitySet Name="Orders" EntityType="MovieDB.Store.Orders" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Seances" EntityType="MovieDB.Store.Seances" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="OrderSeance" Association="MovieDB.Store.OrderSeance">
+      <End Role="Order" EntitySet="Orders" />
+      <End Role="Seance" EntitySet="Seances" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TiketsCount" Type="int" Nullable="false" DefaultValue="1" />
+    <Property Name="OrderTime" Type="time" Nullable="false" />
+    <Property Name="SeanceSeanceId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Seances">
+    <Key>
+      <PropertyRef Name="SeanceId" />
+    </Key>
+    <Property Name="SeanceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MovieName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SeanceTime" Type="time" Nullable="false" />
+  </EntityType>
+  <Association Name="OrderSeance">
+    <End Role="Order" Type="MovieDB.Store.Orders" Multiplicity="*" />
+    <End Role="Seance" Type="MovieDB.Store.Seances" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Seance">
+        <PropertyRef Name="SeanceId" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="SeanceSeanceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="MovieDB" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="MovieDBContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Orders" EntityType="MovieDB.Order" />
+          <EntitySet Name="Seances" EntityType="MovieDB.Seance" />
+          <AssociationSet Name="OrderSeance" Association="MovieDB.OrderSeance">
+            <End Role="Order" EntitySet="Orders" />
+            <End Role="Seance" EntitySet="Seances" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="OrderId" />
+          </Key>
+          <Property Name="OrderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TiketsCount" Type="Int32" Nullable="false" DefaultValue="1" />
+          <Property Name="OrderTime" Type="Time" Nullable="false" />
+          <NavigationProperty Name="SeanceId" Relationship="MovieDB.OrderSeance" FromRole="Order" ToRole="Seance" />
+          <Property Name="SeanceSeanceId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Seance">
+          <Key>
+            <PropertyRef Name="SeanceId" />
+          </Key>
+          <Property Name="SeanceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MovieName" Type="String" Nullable="false" />
+          <Property Name="SeanceTime" Type="Time" Nullable="false" />
+          <NavigationProperty Name="Order" Relationship="MovieDB.OrderSeance" FromRole="Seance" ToRole="Order" />
+        </EntityType>
+        <Association Name="OrderSeance">
+          <End Type="MovieDB.Order" Role="Order" Multiplicity="*" />
+          <End Type="MovieDB.Seance" Role="Seance" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="Seance">
+              <PropertyRef Name="SeanceId" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="SeanceSeanceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MovieDBStoreContainer" CdmEntityContainer="MovieDBContainer">
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="IsTypeOf(MovieDB.Order)">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="TiketsCount" ColumnName="TiketsCount" />
+          <ScalarProperty Name="OrderTime" ColumnName="OrderTime" />
+          <ScalarProperty Name="SeanceSeanceId" ColumnName="SeanceSeanceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Seances">
+      <EntityTypeMapping TypeName="IsTypeOf(MovieDB.Seance)">
+        <MappingFragment StoreEntitySet="Seances">
+          <ScalarProperty Name="SeanceId" ColumnName="SeanceId" />
+          <ScalarProperty Name="MovieName" ColumnName="MovieName" />
+          <ScalarProperty Name="SeanceTime" ColumnName="SeanceTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

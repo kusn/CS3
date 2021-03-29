@@ -1,0 +1,19 @@
+﻿<Window x:Class="CsvToFromDBEF.WndEdit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CsvToFromDBEF"
+        mc:Ignorable="d"
+        Title="WndEdit" Height="250" Width="450" Loaded="Window_Loaded">
+    <StackPanel Orientation="Vertical">
+        <Label Content="ФИО" HorizontalContentAlignment="Center" Height="30"/>
+        <TextBox x:Name="tbName" Height="30"/>
+        <Label Content="Email" HorizontalContentAlignment="Center" Height="30"/>
+        <TextBox x:Name="tbEmail" Height="30"/>
+        <Label Content="Телефон" HorizontalContentAlignment="Center" Height="30"/>
+        <TextBox x:Name="tbPhone" Height="30"/>
+        <Button x:Name="btnEdit" Content="Изменить" Height="30" Click="btnEdit_Click"/>
+
+    </StackPanel>
+</Window>

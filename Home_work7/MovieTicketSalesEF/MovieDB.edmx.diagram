@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c1dc76f090a2440cad06fb049523d33c" Name="Diagram1" >
+        <EntityTypeShape EntityType="MovieDB.Order" Width="1.5" PointX="8.125" PointY="2" />
+        <EntityTypeShape EntityType="MovieDB.Seance" Width="1.5" PointX="11.375" PointY="2.875" />
+        <AssociationConnector Association="MovieDB.OrderSeance" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

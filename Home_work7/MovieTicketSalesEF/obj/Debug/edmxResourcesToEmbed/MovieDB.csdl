@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="MovieDB" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="MovieDBContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Orders" EntityType="MovieDB.Order" />
+    <EntitySet Name="Seances" EntityType="MovieDB.Seance" />
+    <AssociationSet Name="OrderSeance" Association="MovieDB.OrderSeance">
+      <End Role="Order" EntitySet="Orders" />
+      <End Role="Seance" EntitySet="Seances" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TiketsCount" Type="Int32" Nullable="false" DefaultValue="1" />
+    <Property Name="OrderTime" Type="Time" Nullable="false" />
+    <NavigationProperty Name="SeanceId" Relationship="MovieDB.OrderSeance" FromRole="Order" ToRole="Seance" />
+    <Property Name="SeanceSeanceId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Seance">
+    <Key>
+      <PropertyRef Name="SeanceId" />
+    </Key>
+    <Property Name="SeanceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MovieName" Type="String" Nullable="false" />
+    <Property Name="SeanceTime" Type="Time" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="MovieDB.OrderSeance" FromRole="Seance" ToRole="Order" />
+  </EntityType>
+  <Association Name="OrderSeance">
+    <End Type="MovieDB.Order" Role="Order" Multiplicity="*" />
+    <End Type="MovieDB.Seance" Role="Seance" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Seance">
+        <PropertyRef Name="SeanceId" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="SeanceSeanceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

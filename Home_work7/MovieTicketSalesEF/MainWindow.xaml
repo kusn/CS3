@@ -1,0 +1,52 @@
+﻿<Window x:Class="MovieTicketSalesEF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MovieTicketSalesEF"
+        xmlns:winForms="clr-namespace:Microsoft.Reporting.WinForms;assembly=Microsoft.ReportViewer.WinForms"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <TabControl>
+        <TabItem Header="Сеансы">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button x:Name="btnAddSeance" Content="Добавить сеанс" Grid.Row="0" Click="btnAddSeance_Click"/>
+                <Button x:Name="btnDelSeance" Content="Удалить сеанс" Grid.Row="1" Click="btnDelSeance_Click"/>
+                <DataGrid x:Name="Grid" Grid.Row="2" AutoGenerateColumns="False" IsReadOnly="True">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Width="30" Binding="{Binding SeanceId}"/>
+                        <DataGridTextColumn Header="Name" Width="300" Binding="{Binding MovieName}"/>
+                        <DataGridTextColumn Header="Time" Width="*" Binding="{Binding SeanceTime}"/>
+                    </DataGrid.Columns>
+                    <DataGrid.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem x:Name="cmmiBuy" Header="Купить билеты" Click="cmmiBuy_Click"/>
+                        </ContextMenu>
+                    </DataGrid.ContextMenu>
+                </DataGrid>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Заказы">
+            <Grid>
+                <DataGrid x:Name="grdOrders" AutoGenerateColumns="False" IsReadOnly="True">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Id" Binding="{Binding OrderId}"/>
+                        <DataGridTextColumn Header="OrderTime" Binding="{Binding OrderTime}"/>
+                        <DataGridTextColumn Header="Seance" Binding="{Binding SeanceSeanceId}"/>
+                        <DataGridTextColumn Header="Tikets" Binding="{Binding TiketsCount}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Отчет">
+            <WindowsFormsHost>
+                <winForms:ReportViewer x:Name="ReportViewer"/>
+            </WindowsFormsHost>
+        </TabItem>
+    </TabControl>
+</Window>
