@@ -45,7 +45,7 @@ namespace CsvToFromDBEF
         {
             Import();
             foreach(var contact in contactList)
-            {
+            {                
                 _dBContainer.ContactDBSet.Add(new ContactDB { Name = contact.Name, Email = contact.Email, Phone = contact.Phone });
                 _dBContainer.SaveChanges();
             }
@@ -73,7 +73,7 @@ namespace CsvToFromDBEF
 
         private void Export()
         {
-            using(StreamWriter sw = new StreamWriter(fileName))
+            using(StreamWriter sw = new StreamWriter(fileName, false, Encoding.Default))
             {
                 List<ContactDB> contactDBList = new List<ContactDB>();
                 contactDBList = _dBContainer.ContactDBSet.ToList();
@@ -81,6 +81,21 @@ namespace CsvToFromDBEF
                 foreach(var v in contactDBList)
                     sw.WriteLine(v.Name + ";" + v.Email + ";" + v.Phone);
             }
+        }
+
+        private void cmiEdit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void cmiRemove_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

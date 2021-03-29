@@ -14,6 +14,7 @@
         <StackPanel Grid.Row="0" Orientation="Horizontal">
             <Button x:Name="btnImport" Content="Импорт" HorizontalAlignment="Stretch" MinWidth="100" Click="btnImport_Click"/>
             <Button x:Name="btnExport" Content="Экспорт" HorizontalAlignment="Stretch" MinWidth="100" Click="btnExport_Click"/>
+            <Button x:Name="btnClear" Content="Очистить" HorizontalAlignment="Stretch" MinWidth="100" Click="btnClear_Click"/>
         </StackPanel>
         <DataGrid x:Name="dgContacts" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
@@ -22,6 +23,12 @@
                 <DataGridTextColumn Header="Email" Width="200" Binding="{Binding Email}"/>
                 <DataGridTextColumn Header="Phone" Width="*" Binding="{Binding Phone}"/>
             </DataGrid.Columns>
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem x:Name="cmiEdit" Header="Редактировать" Click="cmiEdit_Click"/>
+                    <MenuItem x:Name="cmiRemove" Header="Удалить" Click="cmiRemove_Click"/>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
         </DataGrid>
         
     </Grid>
