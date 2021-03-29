@@ -1,4 +1,14 @@
-﻿using System;
+﻿//Кудряшов Сергей
+
+//4. *Есть CSV-файл с таким содержанием:
+//Иванов И.И., ivanov @mail.ru, +7(111) 123 - 45 - 67
+//Петров П.П., petrov @mail.ru, +7(222) 123 - 45 - 67
+//Федоров Ф.Ф., fedorov @mail.ru, +7(333) 123 - 45 - 67
+//Записи представляют собой значения: ФИО, почта, телефон.Необходимо написать приложение, которое:
+//a.импортирует данный файл в базу данных;
+//b.позволяет редактировать данные.
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,18 +25,20 @@ using System.Windows.Shapes;
 using System.Data.Entity;
 using System.Data.Entity.Core.Objects;
 using System.IO;
+using System.ComponentModel;
 
 namespace CsvToFromDBEF
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window, INotifyPropertyChanged
     {
         ContactsDBContainer _dBContainer;
         List<Contact> contactList = new List<Contact>();
         List<Contact> contactListToExport = new List<Contact>();
         string fileName = "..\\..\\Example.csv";
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public MainWindow()
         {
@@ -58,9 +70,10 @@ namespace CsvToFromDBEF
             Export();
         }
 
+        //Чтение из файла
         private void Import()
         {
-            using(StreamReader sr = new StreamReader(fileName))
+            using(StreamReader sr = new StreamReader(fileName, Encoding.Default))
             {
                 while(!sr.EndOfStream)
                 {                    
@@ -71,6 +84,7 @@ namespace CsvToFromDBEF
             }
         }
 
+        //Запись в файл
         private void Export()
         {
             using(StreamWriter sw = new StreamWriter(fileName, false, Encoding.Default))
@@ -85,17 +99,34 @@ namespace CsvToFromDBEF
 
         private void cmiEdit_Click(object sender, RoutedEventArgs e)
         {
+            ContactDB contactDB = new ContactDB();
+            contactDB = (ContactDB)dgContacts.SelectedItem;
+            WndEdit wndEdit = new WndEdit(contactDB.ContactId);            
 
+            if (wndEdit.ShowDialog() == true)
+            {
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("_dBContainer.ContactDBSet"));   //? Как включить реакцию на изменения в Базе
+                _dBContainer.ContactDBSet.Load();
+                dgContacts.Items.Refresh();
+            }
         }
 
         private void cmiRemove_Click(object sender, RoutedEventArgs e)
         {
-
+            ContactDB contactDB = new ContactDB();
+            contactDB = (ContactDB)dgContacts.SelectedItem;
+            _dBContainer.ContactDBSet.Remove(contactDB);
+            _dBContainer.SaveChanges();
+            _dBContainer.ContactDBSet.Load();
+            dgContacts.Items.Refresh();
         }
 
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
-
+            _dBContainer.ContactDBSet.RemoveRange(_dBContainer.ContactDBSet);
+            _dBContainer.SaveChanges();
+            _dBContainer.ContactDBSet.Load();
+            dgContacts.Items.Refresh();
         }
     }
 }

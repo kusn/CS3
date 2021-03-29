@@ -44,3 +44,5 @@ D:\Projects\CS3\Home_work7\CsvToFromDBEF\obj\Debug\CsvToFromDBEF.csproj.CoreComp
 D:\Projects\CS3\Home_work7\CsvToFromDBEF\obj\Debug\CsvToFromDBEF.csproj.CopyComplete
 D:\Projects\CS3\Home_work7\CsvToFromDBEF\obj\Debug\CsvToFromDBEF.exe
 D:\Projects\CS3\Home_work7\CsvToFromDBEF\obj\Debug\CsvToFromDBEF.pdb
+D:\Учеба\CS3\Home_work7\CsvToFromDBEF\obj\Debug\WndEdit.g.cs
+D:\Учеба\CS3\Home_work7\CsvToFromDBEF\obj\Debug\WndEdit.baml
