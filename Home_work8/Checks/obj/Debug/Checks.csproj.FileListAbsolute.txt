@@ -1,0 +1,7 @@
+D:\Projects\CS3\Home_work8\Checks\bin\Debug\Checks.exe.config
+D:\Projects\CS3\Home_work8\Checks\bin\Debug\Checks.exe
+D:\Projects\CS3\Home_work8\Checks\bin\Debug\Checks.pdb
+D:\Projects\CS3\Home_work8\Checks\obj\Debug\Checks.csprojAssemblyReference.cache
+D:\Projects\CS3\Home_work8\Checks\obj\Debug\Checks.csproj.CoreCompileInputs.cache
+D:\Projects\CS3\Home_work8\Checks\obj\Debug\Checks.exe
+D:\Projects\CS3\Home_work8\Checks\obj\Debug\Checks.pdb
